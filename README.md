@@ -4,7 +4,9 @@ I'm currently working as a technical specialist in Singapore with a focus on sof
 
 ### Topics
 #### Azure
-
+1. [Install Azure Module for PowerShell on OS-X](post12azuremodule.md) - Mar2022
+2. [Notes on Azure AD](post10azuread.md) - Mar2022
+3. [Overview of Management Groups](post11resourcegroups.md) - Mar2022
 
 #### NSX
 1. [Useful Antrea Commands](post9antrea.md) - Jan2022
