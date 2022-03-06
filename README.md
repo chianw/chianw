@@ -4,12 +4,12 @@ I'm currently working as a technical specialist in Singapore with a focus softwa
 
 ### Topics
 #### Azure
-1. [Useful Antrea Commands](antrea.md) - Jan2022
+1. [Useful Antrea Commands](post9antrea.md) - Jan2022
 
 #### NSX
 
 #### K8S
-1. [Using crictl and containerd](containerd.md) - Dec2021
+1. [Using crictl and containerd](post7crictl.md) - Dec2021
 
 #### Carbon Black
-1. [Enable Carbon Black container image scanning](cbscan.md) - Dec2021
+1. [Enable Carbon Black container image scanning](post8cbctl.md) - Dec2021
