@@ -13,7 +13,7 @@ I'm currently working as a technical specialist in Singapore with a focus on sof
 
 #### K8S
 1. [Using crictl and containerd](post7crictl.md) - Dec2021
-2. [Using kubectl proxy](post3-kubectlproxy) - Oct2021
+2. [Using kubectl proxy](post3-kubectlproxy.md) - Oct2021
 3. [Decoding K8S certificates](post4-k8scert.md) - Sept2021
 
 #### Carbon Black
