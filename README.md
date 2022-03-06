@@ -21,4 +21,4 @@ I'm currently working as a technical specialist in Singapore with a focus on sof
 
 #### Others
 1. [Installing PANW XSOAR](post2-xsoar.md) - Sept2021
-2. [Using KASM behind reverse proxy](post6kasm) - Nov2021
+2. [Using KASM behind reverse proxy](post6kasm.md) - Nov2021
