@@ -8,6 +8,7 @@ vSphere with Tanzu (TKGS) can be deployed on vSphere Networking or on NSX-T netw
 ![tkgs1](https://github.com/chianw/chianw/blob/main/tkgs1.png)
 
 
+
 **Default DFW rules** - the default DFW rules for the "red" vSphere namespace containing 2 TKGS clusters. From these set of DFW rules for the "red" vSphere namespace, you can observe that:
 1. all logical segments behind the T1 router for that namespace are allowed to communicate with one another
 2. The Supervisor Control VM logical segment is allowed to communicate with all logical segments behind the T1 router
@@ -18,6 +19,16 @@ In addition, there is a fixed set of default rules that allows ALL incoming traf
 ![tkgs2](https://github.com/chianw/chianw/blob/main/tkgs2.png)
 
 
+
 **Default GFW rules** - the default GFW rules on the T1 for "red" vSphere namespace allows ALL traffic from both in/out directions
 
 ![tkgs3](https://github.com/chianw/chianw/blob/main/tkgs3.png)
+
+
+**Default NAT rules** - these are the default NAT rules on the vSphere namespace T1 router
+The default behaviour from these rules are:
+1. There is no NAT for traffic between any Tanzu logical segments, that is, traffic between logical segments where Tanzu K8S nodes are attached
+2. Traffic from Tanzu logical segment to ingress CIDR will not have any NAT
+3. All other traffic will SNAT to the Egress CIDR IP assigned to the T1 namespace router
+
+![tkgs4](https://github.com/chianw/chianw/blob/main/tkgs4.png)
