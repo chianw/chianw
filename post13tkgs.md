@@ -32,3 +32,8 @@ The default behaviour from these rules are:
 3. All other traffic will SNAT to the Egress CIDR IP assigned to the T1 namespace router
 
 ![tkgs4](https://github.com/chianw/chianw/blob/main/tkgs4.png)
+
+
+**Namespace, Ingress and Egress CIDRS**
+
+![tkgs5](https://github.com/chianw/chianw/blob/main/tkgs5.png)
