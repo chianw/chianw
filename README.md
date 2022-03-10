@@ -12,6 +12,7 @@ I'm currently working as a technical specialist in Singapore with a focus on sof
 1. [Useful Antrea Commands](post9antrea.md) - Jan2022
 2. [View logs on NSX-T gateway firewall](post5-nsxtedge.md) - Nov2021
 3. [Enabling logging on NSX-T distributed IDPS](post1-idps.md) - Sept2021
+4. [NSX default DFW, GFW and NAT for vSphere with Tanzu](post13tkgs.md) - Mar2022
 
 #### K8S
 1. [Using crictl and containerd](post7crictl.md) - Dec2021
