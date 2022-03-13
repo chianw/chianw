@@ -33,3 +33,27 @@ This seems to override the Ubuntu VM's routing table, which still points to 10.0
 **4. VYOS interface with public IP**
 
 ![azure4rt](https://github.com/chianw/chianw/blob/main/azure4rt.png)
+
+**5. VYOS interface with private IP facing internal subnet**
+
+![azure5rt](https://github.com/chianw/chianw/blob/main/azure5rt.png)
+
+
+**6. Effective routes for VYOS internal interface**  
+Although the default route now points to itself 10.0.0.5, it does not seem to affect the routing or cause any recursive routing. 
+
+![azure6rt](https://github.com/chianw/chianw/blob/main/azure6rt.png)
+
+**6. Effective routes for VYOS Internet-facing interface**  
+
+![azure7rt](https://github.com/chianw/chianw/blob/main/azure7rt.png)
+
+
+**7. Interfaces, routing table and NAT configuration on VYOS**  
+
+
+![azure8rt](https://github.com/chianw/chianw/blob/main/azure8rt.png)
+
+
+
+
