@@ -15,3 +15,16 @@ Notice that the VYOS router is deployed in 2-arm mode: 1 interface facing Intern
 The custom route table is associated with vnet1-subnet1 and has a default route pointing to VYOS interface IP in the same subnet.
 
 ![azure2rt](https://github.com/chianw/chianw/blob/main/azure2rt.png)
+
+<br>
+**Effective routes for Ubuntu VM NIC**
+
+Notice the default route is to 10.0.0.5 which is the VYOS interface IP in vnet1-subnet1, and the original default route is inactive
+
+![azure3rt](https://github.com/chianw/chianw/blob/main/azure3rt.png)
+
+<br>
+This seems to override the Ubuntu VM's routing table, which still points to 10.0.0.1. A test using "curl ifconfig.me" shows the public IP which is VYOS public IP, confirming that traffic to Internet is forced through VYOS
+
+![azure9rt](https://github.com/chianw/chianw/blob/main/azure9rt.png)
+
