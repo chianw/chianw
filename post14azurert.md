@@ -2,6 +2,8 @@
 
 This post describes a simple example of how you can use a custom route table to force traffic going out of the vnet to Internet to first traverse a network virtual appliance. By default every subnet within a virtual network has a default route to the Internet and workloads on the subnet can access the Internet directly. This is not a desired behaviour in many cases since most organisations want to control Internet access for their workloads in the cloud. This example shows how this can be done using a custom route table. The network virtual appliance deployed here is VYOS router that performs basic NAT for the egress traffic to Internet. In actual deployments organizations will want to use a true Firewall.
 
+For simplicity, all NSGs are set to be permissive for testing purposes only.
+
 
 **Overview of lab setup**
 
@@ -28,3 +30,6 @@ This seems to override the Ubuntu VM's routing table, which still points to 10.0
 
 ![azure9rt](https://github.com/chianw/chianw/blob/main/azure9rt.png)
 
+**VYOS interface with public IP**
+
+![azure4rt](https://github.com/chianw/chianw/blob/main/azure4rt.png)
