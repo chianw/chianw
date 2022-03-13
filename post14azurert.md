@@ -25,6 +25,6 @@ Notice the default route is to 10.0.0.5 which is the VYOS interface IP in vnet1-
 
 <br>
 This seems to override the Ubuntu VM's routing table, which still points to 10.0.0.1. A test using "curl ifconfig.me" shows the public IP which is VYOS public IP, confirming that traffic to Internet is forced through VYOS
-
+<br>
 ![azure9rt](https://github.com/chianw/chianw/blob/main/azure9rt.png)
 
