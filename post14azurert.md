@@ -11,6 +11,8 @@ Notice that the VYOS router is deployed in 2-arm mode: 1 interface facing Intern
 
 ![azure1rt](https://github.com/chianw/chianw/blob/main/azure1rt.png)  
 
+![azure10rt](https://github.com/chianw/chianw/blob/main/azure10rt.png)  
+
 
 **2. Custom Route table**
 
