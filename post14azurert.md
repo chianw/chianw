@@ -2,6 +2,7 @@
 
 This post describes a simple example of how you can use a custom route table to force traffic going out of the vnet to Internet to first traverse a network virtual appliance. By default every subnet within a virtual network has a default route to the Internet and workloads on the subnet can access the Internet directly. This is not a desired behaviour in many cases since most organisations want to control Internet access for their workloads in the cloud. This example shows how this can be done using a custom route table. The network virtual appliance deployed here is VYOS router that performs basic NAT for the egress traffic to Internet. In actual deployments organizations will want to use a true Firewall.
 
+<br>
 **Overview of lab setup**
 
 Notice that the VYOS router is deployed in 2-arm mode: 1 interface facing Internet and 1 interface facing internal
