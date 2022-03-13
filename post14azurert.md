@@ -10,6 +10,7 @@ Notice that the VYOS router is deployed in 2-arm mode: 1 interface facing Intern
 
 
 
+
 **Custom Route table**
 
 The custom route table is associated with vnet1-subnet1 and has a default route pointing to VYOS interface IP in the same subnet.
