@@ -6,7 +6,7 @@ This post describes a simple example of how you can use a custom route table to 
 
 Notice that the VYOS router is deployed in 2-arm mode: 1 interface facing Internet and 1 interface facing internal
 
-![azure1rt](https://github.com/chianw/chianw/blob/main/azure1rt.png)
+![azure1rt](https://github.com/chianw/chianw/blob/main/azure1rt.png)  
 
 
 
