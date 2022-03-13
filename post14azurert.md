@@ -5,7 +5,7 @@ This post describes a simple example of how you can use a custom route table to 
 For simplicity, all NSGs are set to be permissive for testing purposes only.
 
 
-**Overview of lab setup**
+**1. Overview of lab setup**
 
 Notice that the VYOS router is deployed in 2-arm mode: 1 interface facing Internet and 1 interface facing internal
 
