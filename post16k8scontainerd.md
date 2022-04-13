@@ -109,5 +109,28 @@ sudo systemctl restart containerd
 
 ```
 
+**Step 7** Installing kubeadm , kubelet and kubectl on all hosts
+
+```
+sudo apt-get update
+sudo apt-get install -y apt-transport-https ca-certificates curl
+
+sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
+
+
+echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main"| sudo tee /etc/apt/sources.list.d/kubernetes.list
+
+sudo apt-get update
+
+## install a specific version of k8s
+apt-get install -y kubelet=1.21.9-00 kubeadm=1.21.9-00 kubectl=1.21.9-00
+apt-mark hold kubelet kubeadm kubectl
+
+# enable kubelet
+systemctl enable kubelet
+
+```
+
+
 
 
