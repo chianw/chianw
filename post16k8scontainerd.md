@@ -193,7 +193,7 @@ To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 
 ```
 
-**Step 12** Install Antrea or other CNI by running the below only on master node. This assumes master node has Internet access to pull the required files
+**Step 12** Install Antrea or other CNI by running the below only on master node. This assumes master node has Internet access to pull the required files. Antrea v1.5.2 is the latest as of time of writing
 ```
 kubectl apply -f https://github.com/antrea-io/antrea/releases/download/v1.5.2/antrea.yml 
 
