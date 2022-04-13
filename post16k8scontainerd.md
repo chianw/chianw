@@ -11,4 +11,4 @@ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh
 sudo systemctl restart ssh</code></pre>
 
 <pre><code>## set root password, by default root user has no password in Ubuntu preventing SSH login
-sudo passwd/code></pre>
+sudo passwd</code></pre>
