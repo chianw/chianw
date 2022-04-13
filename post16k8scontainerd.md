@@ -9,3 +9,6 @@ This post describes how you can install a K8S cluster from scratch on Ubuntu 20.
 <pre><code>sudo ufw disable
 sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 sudo systemctl restart ssh</code></pre>
+
+<pre><code>## set root password, by default root user has no password in Ubuntu preventing SSH login
+sudo passwd/code></pre>
