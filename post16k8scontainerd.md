@@ -131,7 +131,7 @@ systemctl enable kubelet
 
 ```
 
-**Step 8** Pull specific K8S release images only on master node, Ensure kubelet uses systemd by creating a kubeadm init file, only on master node, change the below controlPlaneEndpoint, clusterName accordingly
+**Step 8** Pull specific K8S release images only on master node, Ensure kubelet uses systemd by creating a kubeadm init file, only on master node, change the below controlPlaneEndpoint, clusterName, kubernetesVersion accordingly
 
 ```
 ## pull images for a specific k8s release, run this only on master node where kubeadm is installed
@@ -156,6 +156,48 @@ cgroupDriver: systemd
 
 ```
 
+**Step 9** Run kubeadm init on master node, referencing the kubeadm-config.yaml file created in previous step
+
+```
+kubeadm init --config=/root/kubeadm-config.yaml
+```
+
+**Step 10** Join worker nodes to the master node. After running kubeadm init on the master node, you should get the information below to join worker node to master to form a K8S cluster. Repeat on each worker node
+```
+kubeadm join 192.168.110.70:6443 --token cjs8t8.q2xz3lr5n6mjdx8f \
+        --discovery-token-ca-cert-hash sha256:ab2467c303f425cd1aca87ee1619389d1c1229dd591b0f7a1a7ee3bd3a57682b
+
+```
+
+**Step 10** Update location of kubeconfig file on master node
+```
+mkdir -p $HOME/.kube
+sudo cp -f /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+```
+
+**Step 11** Check cluster from master node. Nodes will be on NotReady state until you install CNI.
+```
+root@napp-k8s1:~# kubectl get nodes
+NAME        STATUS     ROLES                  AGE   VERSION
+napp-k8s1   NotReady   control-plane,master   11m   v1.21.9
+
+
+root@napp-k8s1:~# kubectl cluster-info
+Kubernetes control plane is running at https://192.168.110.70:6443
+CoreDNS is running at https://192.168.110.70:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+
+
+```
+
+**Step 12** Install Antrea or other CNI by running the below only on master node. This assumes master node has Internet access to pull the required files
+```
+kubectl apply -f https://github.com/antrea-io/antrea/releases/download/v1.5.2/antrea.yml 
+
+```
 
 
 
