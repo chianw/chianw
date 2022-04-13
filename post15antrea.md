@@ -12,10 +12,12 @@ Download the below 2 files from Vmware, the first file is required to install ba
 2. antrea-interworking-0.2.0.zip
 
 
+
 **After extracting the zip file for the image into a tar file** - Run the following command to import the image into the k8s.io namespace, you must import into k8s.io namespace for the image to be available for K8S deployment
 
 <pre><code>ctr -n=k8s.io images import antrea-advanced-debian-v1.2.3_vmware.3.tar
 </code></pre>
+
 
 
 **Verify** 
