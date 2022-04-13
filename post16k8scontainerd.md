@@ -131,6 +131,31 @@ systemctl enable kubelet
 
 ```
 
+**Step 8** Pull specific K8S release images only on master node, Ensure kubelet uses systemd by creating a kubeadm init file, only on master node, change the below controlPlaneEndpoint, clusterName accordingly
+
+```
+## pull images for a specific k8s release, run this only on master node where kubeadm is installed
+kubeadm config images pull --kubernetes-version v1.21.9
+
+##For kubeadm 1.21.9 version, the below kubeadm init file is used
+
+root@napp-k8s1:~# cat kubeadm-config.yaml
+# kubeadm-config.yaml
+kind: ClusterConfiguration
+apiVersion: kubeadm.k8s.io/v1beta2
+kubernetesVersion: v1.21.9
+networking:
+  podSubnet: "10.244.0.0/16"
+  dnsDomain: "cluster.local"
+controlPlaneEndpoint: "192.168.110.70:6443"
+clusterName: "napp-k8s-cluster"
+---
+kind: KubeletConfiguration
+apiVersion: kubelet.config.k8s.io/v1beta1
+cgroupDriver: systemd
+
+```
+
 
 
 
