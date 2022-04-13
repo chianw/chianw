@@ -1,6 +1,6 @@
 ## Importing Antrea images with containerd
 
-I have a vanilla K8S cluster v1.21.9 that is newly built and using Containerd and not Docker. CNI has not been installed yet and this post aims to describe some of the steps to import Antrea CNI image into the K8S nodes before installing them. Normally this is done via "docker import" but since Docker is not used, the alternative using "ctr" command is explained here. After importing the image, the rest of the installation follows the documentation [here](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-DFD8033B-22E2-4D7A-BD58-F68814ECDEB1.html)
+I have a vanilla K8S cluster v1.21.9 that is newly built and using Containerd and not Docker. CNI has not been installed yet and this post aims to describe some of the steps to import Antrea CNI image into the K8S nodes before installing them. Normally this is done via ["docker load"](https://docs.docker.com/engine/reference/commandline/load/) but since Docker is not used, the alternative using "ctr" command is explained here. After importing the image, the rest of the installation follows the documentation [here](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-DFD8033B-22E2-4D7A-BD58-F68814ECDEB1.html)
 
 **Installation and integration steps**
 
