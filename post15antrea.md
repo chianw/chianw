@@ -3,10 +3,10 @@
 I have a vanilla K8S cluster v1.21.9 that is newly built and using Containerd and not Docker. CNI has not been installed yet and this post aims to describe some of the steps to import Antrea CNI image into the K8S nodes before installing them. Normally this is done via "docker import" but since Docker is not used, the alternative using "ctr" command is explained here.
 
 **Installation and integration steps**
-Download the below 2 files from Vmware, the first file is required to install basic Antrea CNI, the second file is to inter-operate with NSXT![image](https://user-images.githubusercontent.com/91816369/163108776-263f6f07-e47d-4248-a816-076497176cb3.png)
 
-<pre><code> antrea-advanced-1.2.3+vmware.3.19009828.zip
-antrea-interworking-0.2.0.zip </code></pre>
+Download the below 2 files from Vmware, the first file is required to install basic Antrea CNI, the second file is to inter-operate with NSXT
+antrea-advanced-1.2.3+vmware.3.19009828.zip
+antrea-interworking-0.2.0.zip
 
 
 **View available Antrea Cluster Network Policies or ancp** - Run the following command
