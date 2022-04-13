@@ -182,7 +182,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 root@napp-k8s1:~# kubectl get nodes
 NAME        STATUS     ROLES                  AGE   VERSION
 napp-k8s1   NotReady   control-plane,master   11m   v1.21.9
-
+napp-k8s2   NotReady   worker                 11m   v1.21.9
 
 root@napp-k8s1:~# kubectl cluster-info
 Kubernetes control plane is running at https://192.168.110.70:6443
