@@ -30,4 +30,4 @@ docker.io/antrea/antrea-advanced-debian:v1.2.3_vmware.3                         
 </code></pre>
 
 
-After the steps above you can continue with the Antrea installation.
+After the steps above you can continue with the Antrea installation by directly applying the manifest file that came bundled in the zip file
