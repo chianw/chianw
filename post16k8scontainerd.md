@@ -42,3 +42,13 @@ EOF
 sudo sysctl --system
 ```
 
+**Step 4** Disable swap on all hosts - please recheck /etc/fstab after this to ensure swap disabled, note that the below does not seem to remote swap in /etc/fstab so you may have to manually do it!
+
+```
+sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+sudo swapoff -a
+```
+
+
+
+
