@@ -26,6 +26,7 @@ Edit /etc/hosts file to add A record for all node IP and their hostnames. Repeat
 **Step 3** Letting iptables see bridged traffic on all hosts
 
 <pre><code>
+'''
 cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
 br_netfilter
 EOF
@@ -33,5 +34,7 @@ cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
 net.bridge.bridge-nf-call-ip6tables = 1
 net.bridge.bridge-nf-call-iptables = 1
 EOF
-sudo sysctl --system</code></pre>
+sudo sysctl --system
+'''
+</code></pre>
 
