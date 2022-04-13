@@ -20,12 +20,7 @@ Download the below 2 files from Vmware, the first file is required to install ba
 
 **Verify** 
 
-<pre><code>ctr -n=k8s.io images list</code></pre>
-
-
-**View available ClusterGroups in Antrea** - Run the following command.
-
-<pre><code>root@ubuntu-jump:~/antrea# kubectl get cg
-NAME                                     AGE
-9dfc4e04-2d17-40d1-afcf-250b0d191c62     44m
-9dfc4e04-2d17-40d1-afcf-250b0d191c62-0   44m</code></pre>
+<pre><code>root@k8s-cl1-master:~/antrea/antrea-advanced-1.2.3+vmware.3.19009828/manifests# ctr -n=k8s.io images list
+REF                                                                                                        TYPE                                                      DIGEST                                                                  SIZE      PLATFORMS                                                                    LABELS                        
+docker.io/antrea/antrea-advanced-debian:v1.2.3_vmware.3                                                    application/vnd.docker.distribution.manifest.v2+json      sha256:79cb020bc20e663f6749982e5302e18287a24a7437d6b169c02a160a80260dd7 592.7 MiB linux/amd64                                                                  io.cri-containerd.image=managed
+</code></pre>
