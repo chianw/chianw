@@ -15,7 +15,7 @@ Download the below 2 files from Vmware, the first file is required to install ba
 
 **After extracting the zip file for the image into a tar file**
 
-Run the following command to import the image into the k8s.io namespace, you must import into k8s.io namespace for the image to be available for K8S deployment
+Run the following command to import the image into the k8s.io namespace, you must import into k8s.io namespace for the image to be available for K8S deployment. This image import needs to be done on each K8S node in the cluster.
 
 <pre><code>ctr -n=k8s.io images import antrea-advanced-debian-v1.2.3_vmware.3.tar
 </code></pre>
@@ -28,3 +28,6 @@ Run the following command to import the image into the k8s.io namespace, you mus
 REF                                                                                                        TYPE                                                      DIGEST                                                                  SIZE      PLATFORMS                                                                    LABELS                        
 docker.io/antrea/antrea-advanced-debian:v1.2.3_vmware.3                                                    application/vnd.docker.distribution.manifest.v2+json      sha256:79cb020bc20e663f6749982e5302e18287a24a7437d6b169c02a160a80260dd7 592.7 MiB linux/amd64                                                                  io.cri-containerd.image=managed
 </code></pre>
+
+
+After the steps above you can continue with the Antrea installation.
