@@ -1,6 +1,6 @@
 ## Installing K8S with Containerd from scratch on Ubuntu 20.04
 
-This post describes how you can install a K8S cluster from scratch on Ubuntu 20.04, using Containerd as the container runtime instead of Docker. Pre-requisites to this assumes that you have the Ubuntu 20.04 servers installed and running, and allowing SSH access. In my environment, I have 1 master and 2 worker nodes
+This post describes how you can install a K8S cluster from scratch on Ubuntu 20.04, using Containerd as the container runtime instead of Docker. Pre-requisites to this assumes that you have the Ubuntu 20.04 servers installed and running, and allowing SSH access. In my environment, I have 1 master and 1 worker nodes
 
 
 **Step 1** Disable ufw and enable root ssh
@@ -22,3 +22,15 @@ Edit /etc/hosts file to add A record for all node IP and their hostnames. Repeat
 127.0.1.1 napp-k8s2
 192.168.110.70 napp-k8s1
 192.168.110.71 napp-k8s2</code></pre>
+
+**Step 3** Letting iptables see bridged traffic on all hosts
+
+<pre><code>cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
+br_netfilter
+EOF
+cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+EOF
+sudo sysctl --system</code></pre>
+
