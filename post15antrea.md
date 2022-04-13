@@ -4,7 +4,9 @@ I have a vanilla K8S cluster v1.21.9 that is newly built and using Containerd an
 
 **Installation and integration steps**
 
-Download the below 2 files from Vmware, the first file is required to install basic Antrea CNI, the second file is to inter-operate with NSXT
+Download the below 2 files from Vmware, the first file is required to install basic Antrea CNI, the second file is to inter-operate with NSXT. As of time of writing in April 2022, the below files are the latest available.
+
+
 antrea-advanced-1.2.3+vmware.3.19009828.zip
 antrea-interworking-0.2.0.zip
 
