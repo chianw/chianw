@@ -96,4 +96,18 @@ systemctl status  containerd
 
 ```
 
+**Step 6** Edit /etc/containerd/config.toml on each host to make use of SystemdCgroup, take note of the indentation
+
+```
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc]
+  ...
+  [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc.options]
+    SystemdCgroup = true
+
+# restart containerd
+sudo systemctl restart containerd
+
+```
+
+
 
