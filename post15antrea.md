@@ -37,4 +37,4 @@ After the steps above you can continue with the Antrea installation by directly 
 You can verify as below
 
 
-![antreaverify](https://github.com/chianw/chianw/blob/main/antreaverifypng)
+![antreaverify](https://github.com/chianw/chianw/blob/main/antreaverify.png)
