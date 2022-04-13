@@ -12,27 +12,15 @@ Download the below 2 files from Vmware, the first file is required to install ba
 2. antrea-interworking-0.2.0.zip
 
 
-**After extracting the zip file for the image into a tar file ** - Run the following command
+**After extracting the zip file for the image into a tar file** - Run the following command to import the image into the k8s.io namespace, you must import into k8s.io namespace for the image to be available for K8S deployment
 
 <pre><code>ctr -n=k8s.io images import antrea-advanced-debian-v1.2.3_vmware.3.tar
 </code></pre>
 
 
-**View available tiers in Antrea** - Those prefixed with "nsx-category" are pushed from NSX. Antrea itself has a set of policy tiers built-in. The priority number determines the order of policy evaluation, with the lower number resulting in the tier being evaluated first.
+**Verify** 
 
-<pre><code>root@ubuntu-jump:~/antrea# kubectl get tiers
-NAME                          PRIORITY   AGE
-application                   250        3d
-baseline                      253        3d
-emergency                     50         3d
-networkops                    150        3d
-nsx-category-application      4          3d
-nsx-category-emergency        1          3d
-nsx-category-environment      3          3d
-nsx-category-ethernet         0          3d
-nsx-category-infrastructure   2          3d
-platform                      200        3d
-securityops                   100        3d</code></pre>
+<pre><code>ctr -n=k8s.io images list</code></pre>
 
 
 **View available ClusterGroups in Antrea** - Run the following command.
