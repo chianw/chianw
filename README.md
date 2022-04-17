@@ -9,6 +9,9 @@ I'm currently working as a technical specialist in Singapore with a focus on sof
 3. [Overview of Management Groups](post11resourcegroups.md) - Mar2022
 4. [Using custom route table in Azure to force Internet-bound traffic to Network Virtual appliance](post14azurert.md) - Mar2022
 
+#### AWS
+1. [Installing NGINX in AWS Linux EC2 during cloud-init](post17ec2nginx.md) - April2022
+
 #### NSX
 1. [Useful Antrea Commands](post9antrea.md) - Jan2022
 2. [View logs on NSX-T gateway firewall](post5-nsxtedge.md) - Nov2021
