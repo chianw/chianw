@@ -15,4 +15,4 @@ sudo cp /home/ec2-user/index.html /usr/share/nginx/html/index.html
 
 ```
 
-Another example of how to do this for Apache is described (here)[https://cloudkatha.com/how-to-use-ec2-user-data-script-to-install-apache-web-server/]
+Another example of how to do this for Apache is described [here](https://cloudkatha.com/how-to-use-ec2-user-data-script-to-install-apache-web-server)
