@@ -11,6 +11,7 @@ I'm currently working as a technical specialist in Singapore with a focus on sof
 
 #### AWS
 1. [Installing NGINX in AWS Linux EC2 during cloud-init](post17ec2nginx.md) - April2022
+2. [Copying SSH private key to AWS EC2 bastion host](post18scpaws.md) - May2022
 
 #### NSX
 1. [Useful Antrea Commands](post9antrea.md) - Jan2022
