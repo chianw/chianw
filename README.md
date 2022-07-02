@@ -8,6 +8,7 @@ I'm currently working as a technical specialist in Singapore with a focus on sof
 2. [Notes on Azure AD](post10azuread.md) - Mar2022
 3. [Overview of Management Groups](post11resourcegroups.md) - Mar2022
 4. [Using custom route table in Azure to force Internet-bound traffic to Network Virtual appliance](post14azurert.md) - Mar2022
+5. [Routing Internet-bound traffic via a NVA in a specific vnet through vnet-peering](post19.md) - July2022
 
 #### AWS
 1. [Installing NGINX in AWS Linux EC2 during cloud-init](post17ec2nginx.md) - April2022
