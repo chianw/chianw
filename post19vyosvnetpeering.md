@@ -4,7 +4,7 @@ In this post, we have 2 separate vnets - one in Singapore and another in Austral
 
 For simplicity, all NSGs are set to be permissive for testing purposes only.
 
-Note that by default, all Azure VMs are able to access Internet (outbound to Internet from Azure) even if there is no NAT Gateway and even if the VMs do not have public IP assigned. Each Azure VM created will have a default gateway automatically configured to point to the subnet default gateway which is the 1st address in the subnet. For example, if the subnet is 10.0.0.0/24 then the default gateway for the subnet is 10.0.0.1 and this provides Internet access for the Azure VMs in the subnet.
+<mark>Note that by default, all Azure VMs are able to access Internet (outbound to Internet from Azure) even if there is no NAT Gateway and even if the VMs do not have public IP assigned. Each Azure VM created will have a default gateway automatically configured to point to the subnet default gateway which is the 1st address in the subnet. For example, if the subnet is 10.0.0.0/24 then the default gateway for the subnet is 10.0.0.1 and this provides Internet access for the Azure VMs in the subnet via SNAT to a public IP assigned by Azure.</mark>
 
 
 **1. Overview of lab setup**
