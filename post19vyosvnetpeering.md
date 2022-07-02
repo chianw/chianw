@@ -70,7 +70,7 @@ Note that ICMP ping cannot be used by an Azure VM to check if it has Internet ac
 
 **9. Custom Route Table associated with Australia subnet and configured with default route pointing to VYOS interface of 10.0.1.4** 
 
-![auroutetable](https://github.com/chianw/chianw/blob/main/auroutetablepng)
+![auroutetable](https://github.com/chianw/chianw/blob/main/auroutetable.png)
 
 **10. Australia VM interface, effective routes and network security group**  
 
