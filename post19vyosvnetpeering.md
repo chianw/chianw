@@ -4,12 +4,14 @@ In this post, we have 2 separate vnets - one in Singapore and another in Austral
 
 For simplicity, all NSGs are set to be permissive for testing purposes only.
 
+Note that by default, all Azure VMs are able to access Internet (outbound to Internet from Azure) even if there is no NAT Gateway and even if the VMs do not have public IP assigned. Each Azure VM created will have a default gateway automatically configured to point to the subnet default gateway which is the 1st address in the subnet. For example, if the subnet is 10.0.0.0/24 then the default gateway for the subnet is 10.0.0.1 and this provides Internet access for the Azure VMs in the subnet.
+
 
 **1. Overview of lab setup**
 
 Notice that the VYOS router is deployed in 2-arm mode: 1 interface facing Internet and 1 interface facing internal and both interfaces are in Singapore vnet.
 
-
+![vyosvnetpeering.png](https://github.com/chianw/chianw/blob/main/vyosvnetpeering.png)
 
 **2. Resource Groups and Virtual Machines**
 
