@@ -20,6 +20,9 @@ I'm currently working as a technical specialist in Singapore with a focus on sof
 3. [Enabling logging on NSX-T distributed IDPS](post1-idps.md) - Sept2021
 4. [NSX default DFW, GFW and NAT for vSphere with Tanzu](post13tkgs.md) - Mar2022
 
+#### HCX
+1. [Uninstalling VMware HCX](post20removehcx.md) - July2022
+
 #### K8S
 1. [Using crictl and containerd](post7crictl.md) - Dec2021
 2. [Using kubectl proxy](post3-kubectlproxy.md) - Oct2021
