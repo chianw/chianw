@@ -5,30 +5,28 @@ In this post, geo-replication of Azure SQL is being tested. An Azure SQL server 
 > Note that replication is configured per-database. A SQL server can have multiple databases, and replication can be configured selectively for each database.
 
 
-**1. Overview of lab setup**
+**1. Overview of setup - Azure SQL server and databases**
 
-Notice that the VYOS router is deployed in 2-arm mode: 1 interface facing Internet and 1 interface facing internal and both interfaces are in Singapore vnet.
+As setting up Azure SQL server is relatively straightforward, the step-by-step details of doing so are not shown for brevity. The below resources are all created in the same resource-group. The Azure SQL server in Australia East has 2 databases - geosqldb1 and TutorialDB. The Azure SQL server in Japan has the replicated instance of TutorialDB database, but not geosqldb1 which is not configured for geo-replication. To simplify testing, the database firewalls are configured to allow access from my public IP and basic user/password for SQL authentication is being used. 
 
-![vyosvnetpeering.png](https://github.com/chianw/chianw/blob/main/vyosvnetpeering.png)
+![azuresqlreplica1.png](https://github.com/chianw/chianw/blob/main/azuresqlreplica1.png)
 
-**2. Resource Groups and Virtual Machines**
+**2. Primary and Read-only replica**
 
-Two separate resource groups created - one for Singapore and one for Australia. The VYOS VM is created in Singapore resource group and other other VM is in Australia resource group. Note that the VMs do not have public IP addresses assigned directly at all. Access to the VMs is via serial console enabled by creating a custom storage account when the VMs are created. There is also no bastion host in the environment.
+As seen from the TutorialDB database in Australia East, it is the primary database with its read replica in Japan East
 
-![tworesourcegrp.png](https://github.com/chianw/chianw/blob/main/tworesourcegrp.png)
-
-![twovms](https://github.com/chianw/chianw/blob/main/twovms.png)
+![azuresqlreplica2.png](https://github.com/chianw/chianw/blob/main/azuresqlreplica2.png)
 
 
-**3. vnets for Singapore and Australia**
+**3. Peform SQL query against the TutorialDB database in Australia East**
 
-The Singapore vnet has two subnets - one for VYOS interface to Internet and another for communicating to Australia vnet via vnet-peering
+Shows only 2 initial database entries in TutorialDB databse
 
-![vnet1sg](https://github.com/chianw/chianw/blob/main/vnet1sg.png)
+![azuresqlreplica3.png](https://github.com/chianw/chianw/blob/main/azuresqlreplica3.png)
 
-The Australia vnet only has a single subnet
+Insert in another record into TutorialDB database in Australia East
 
-![vnet1au](https://github.com/chianw/chianw/blob/main/vnet1au.png)
+![azuresqlreplica4.png](https://github.com/chianw/chianw/blob/main/azuresqlreplica4.png)
 
 
 **4. vnet Peering**
