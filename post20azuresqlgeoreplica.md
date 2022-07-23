@@ -20,7 +20,7 @@ As seen from the TutorialDB database in Australia East, it is the primary databa
 
 **3. Peform SQL query against the TutorialDB database in Australia East**
 
-Shows only 2 initial database entries in TutorialDB databse
+Using Azure Data Studio to connect to both the SQL servers in Australia East and Japan. For the TutorialDB in Australia East, it shows only 2 initial database entries in TutorialDB database.
 
 ![azuresqlreplica3.png](https://github.com/chianw/chianw/blob/main/azuresqlreplica3.png)
 
@@ -37,23 +37,24 @@ The replicated database in Japan contains the updated table
 
 
 
-**5. VYOS interfaces and Network Security Groups**
+**5. Attempt to update the TutorialDB database in Japan**
 
-The VYOS router has 2 interfaces - one in a subnet meant to access Internet and one to reach the Australia vnet, for the latter a static route needs to be configured as seen later. This is effectively 2-arm mode when it comes to NAT setup. Network Security Groups have allow all configured for simplified testing. 
+Attempting to update the TutorialDB database in Japan fails because it is read-only
 
-![vyosinterface1](https://github.com/chianw/chianw/blob/main/vyosinterface1.png)
-
-![vyosinterface2](https://github.com/chianw/chianw/blob/main/vyosinterface2.png)
-
-![vyosnsg](https://github.com/chianw/chianw/blob/main/vyosnsg.png)
+![azuresqlreplica6.png](https://github.com/chianw/chianw/blob/main/azuresqlreplica6.png)
 
 
-**6. IP Forwarding disabled for VYOS interfaces**  
-Note that IP forwarding has to be disabled for VYOS interfaces in order for it to allow transit traffic
+**6. Trigger Azure SQL failover from Australia East to Japan by making SQL server in Japan the primary server**  
 
-![vyosinterface1ipforward](https://github.com/chianw/chianw/blob/main/vyosinterface1ipforward.png)
+![azuresqlreplica7.png](https://github.com/chianw/chianw/blob/main/azuresqlreplica7.png)
 
-![vyosinterface2ipforward](https://github.com/chianw/chianw/blob/main/vyosinterface2ipforward.png)
+![azuresqlreplica8.png](https://github.com/chianw/chianw/blob/main/azuresqlreplica8.png)
+
+![azuresqlreplica9.png](https://github.com/chianw/chianw/blob/main/azuresqlreplica9.png)
+
+After about 1 minute, the SQL server in Japan becomes the primary server with Australia East holding the read-only replica.
+
+
 
 **7. Effective routes for VYOS interfaces**  
 
