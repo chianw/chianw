@@ -54,46 +54,32 @@ Attempting to update the TutorialDB database in Japan fails because it is read-o
 
 After about 1 minute, the SQL server in Japan becomes the primary server with Australia East holding the read-only replica.
 
+![azuresqlreplica10.png](https://github.com/chianw/chianw/blob/main/azuresqlreplica10.png)
 
 
-**7. Effective routes for VYOS interfaces**  
+**7. Perform insert operation on TutorialDB database in Japan SQL server and observe replication to Australia East**  
 
-![vyosinterface1routes](https://github.com/chianw/chianw/blob/main/vyosinterface1routes.png)
+Now that the SQL server in Japan is primary, it is now writable and hence we can insert a new record into TutorialDB database in Japan and observe the replication taking place to Australia
 
-![vyosinterface2routes](https://github.com/chianw/chianw/blob/main/vyosinterface2routes.png)
+Insert new record into TutorialDB database in Japan
+![azuresqlreplica11.png](https://github.com/chianw/chianw/blob/main/azuresqlreplica11.png)
 
-**8. Public IP used by VYOS for Internet access**  
+Verify that the record was successfully inserted
+![azuresqlreplica12.png](https://github.com/chianw/chianw/blob/main/azuresqlreplica12.png)
 
-Note that ICMP ping cannot be used by an Azure VM to check if it has Internet access, as ICMP from Azure vnet to external is not allowed. Curl will be a better way to verify Internet connectivity and here we perform a curl to https://ifconfig.me to find out the public IP used by VYOS for Internet access
-
-![vyospublicip](https://github.com/chianw/chianw/blob/main/vyospublicip.png)
-
-**9. Custom Route Table associated with Australia subnet and configured with default route pointing to VYOS interface of 10.0.1.4** 
-
-![auroutetable](https://github.com/chianw/chianw/blob/main/auroutetable.png)
-
-**10. Australia VM interface, effective routes and network security group**  
-
-Here an allow-all rule has been added at the top of the Network Security Group to simplify access, but this is not a best practice. Notice the default route to VYOS from the custom route table overrides the original one. The subnet from Australia is associated with this custom route table.
-
-![auvminterface1](https://github.com/chianw/chianw/blob/main/auvminterface1.png)
-
-![auvmroutes](https://github.com/chianw/chianw/blob/main/auvmroutes.png)
-
-![auvmnsg](https://github.com/chianw/chianw/blob/main/auvmnsg.png)
+Verify that the record was successfully replicated to Australia by querying the TutorialDB database in Australia East
+![azuresqlreplica13.png](https://github.com/chianw/chianw/blob/main/azuresqlreplica13.png)
 
 
-**11. Routing table, NAT configuration on VYOS**  
+**8. Attempt to write to TutorialDB in Australia East is unsuccessful as it is read-only**  
 
-Notice a route for the Australia subnet of 10.1.0.0/24 has been added to VYOS pointing to the next-hop of the interface subnet for VYOS
+Now that TutorialDB database in Australia East is read-only replica, any attempts to modify it directly will not be successful
 
-![vyosroutes](https://github.com/chianw/chianw/blob/main/vyosroutes.png)
+Attempt to insert new record into TutorialDB database in Australia East
+![azuresqlreplica14.png](https://github.com/chianw/chianw/blob/main/azuresqlreplica14.png)
 
+Error message showing failure to insert new record in Australia East as it is read-only
+![azuresqlreplica15.png](https://github.com/chianw/chianw/blob/main/azuresqlreplica15.png)
 
-**12. Internet access from Australia VM**  
-
-The VM in Australia is able to ping the VYOS interface which is its default gateway. Accessing ifconfig.me shows the same public IP which is seen when VYOS accesses ifconfig.me . This shows that the VM in Australia is using VYOS to access Internet.
-
-![auvmpublicip](https://github.com/chianw/chianw/blob/main/auvmpublicip.png)
 
 
