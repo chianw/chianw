@@ -29,11 +29,12 @@ Insert in another record into TutorialDB database in Australia East
 ![azuresqlreplica4.png](https://github.com/chianw/chianw/blob/main/azuresqlreplica4.png)
 
 
-**4. vnet Peering**
+**4. Read the replicated database in Japan**
 
-![vnetsg-aupeer](https://github.com/chianw/chianw/blob/main/vnetsg-aupeer.png)
+The replicated database in Japan contains the updated table
 
-![vnetau-sgpeer](https://github.com/chianw/chianw/blob/main/vnetau-sgpeer.png)
+![azuresqlreplica5.png](https://github.com/chianw/chianw/blob/main/azuresqlreplica5.png)
+
 
 
 **5. VYOS interfaces and Network Security Groups**
