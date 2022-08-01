@@ -101,7 +101,7 @@ Using Azure GUI to trigger failover
 
 ![27triggerfailover.png](https://github.com/chianw/chianw/blob/main/27triggerfailover.png)
 
-![27triggerfailover1.png](https://github.com/chianw/chianw/blob/main/27triggerfailover1.png)
+![28triggerfailover1.png](https://github.com/chianw/chianw/blob/main/28triggerfailover1.png)
 
 Failover in progress
 
