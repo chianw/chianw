@@ -10,6 +10,7 @@ I'm currently working as a technical specialist in Singapore with a focus on sof
 4. [Using custom route table in Azure to force Internet-bound traffic to Network Virtual appliance](post14azurert.md) - Mar2022
 5. [Routing Internet-bound traffic via a NVA in a specific vnet through vnet-peering](post19vyosvnetpeering.md) - July2022
 6. [Azure SQL Geo-Replication testing](post20azuresqlgeoreplica.md) - July2022
+7. [Azure SQL Failover Group testing](post21azuresqlfailovergroup.md) - July2022
 
 #### AWS
 1. [Installing NGINX in AWS Linux EC2 during cloud-init](post17ec2nginx.md) - April2022
