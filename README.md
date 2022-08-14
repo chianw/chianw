@@ -11,6 +11,7 @@ I'm currently working as a technical specialist in Singapore with a focus on sof
 5. [Routing Internet-bound traffic via a NVA in a specific vnet through vnet-peering](post19vyosvnetpeering.md) - July2022
 6. [Azure SQL Geo-Replication testing](post20azuresqlgeoreplica.md) - July2022
 7. [Azure SQL Failover Group testing](post21azuresqlfailovergroup.md) - July2022
+8. [Virtual Network Gateway at Hub for spoke to spoke traffic](post22hubspokevgw.md) - Aug2022
 
 #### AWS
 1. [Installing NGINX in AWS Linux EC2 during cloud-init](post17ec2nginx.md) - April2022
