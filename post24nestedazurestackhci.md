@@ -8,7 +8,7 @@ b.      Windows Admin Center 2110.2 running on Windows Server 2019 Standar
 
 c.      Azure Stack HCI 21H2
 
-Pre-requisites:
+**Pre-requisites**:
 
 a.      Download [Azure Stack HCI evaluation](https://azure.microsoft.com/en-us/contact/azure-stack-hci/), [Windows 2019 Server evaluation](https://info.microsoft.com/ww-landing-windows-server-2019.html) and [Windows Admin Center](https://www.microsoft.com/en-us/evalcenter/download-windows-admin-center)
 
