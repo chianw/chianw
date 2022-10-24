@@ -3,13 +3,17 @@
 In this post, I will share some of the gotchas that I hit into while installing Azure Stack HCI in a nested environment on HyperV running on a Windows 11 laptop. The versions of software used are:
 
 a.      Windows Server 2019 Standard running as Domain Controller and DNS server
+
 b.      Windows Admin Center 2110.2 running on Windows Server 2019 Standard
+
 c.      Azure Stack HCI 21H2
 
 Pre-requisites:
 
 a.      Download [Azure Stack HCI evaluation](https://azure.microsoft.com/en-us/contact/azure-stack-hci/), [Windows 2019 Server evaluation](https://info.microsoft.com/ww-landing-windows-server-2019.html) and [Windows Admin Center](https://www.microsoft.com/en-us/evalcenter/download-windows-admin-center)
+
 b.      After the Azure Stack HCI VM is installed, it has to join the domain managed by the Windows 2019 domain controller
+
 c.      Similarly after the Windows 2019 containing Windows Admin Center is installed, it has to join the domain managed by the Windows 2019 domain controller
 
 I followed the instructions at [Deploy Azure Stack HCI on a single server](https://learn.microsoft.com/en-us/azure-stack/hci/deploy/single-server) to perform a single-node Azure Stack HCI installation.
