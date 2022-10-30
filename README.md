@@ -13,6 +13,7 @@ I'm currently working as a technical specialist in Singapore with a focus on sof
 7. [Azure SQL Failover Group testing](post21azuresqlfailovergroup.md) - July2022
 8. [Virtual Network Gateway at Hub for spoke to spoke traffic](post22hubspokevgw.md) - Aug2022
 9. [Route Server at Hub for spoke to spoke traffic](post23hubspokers.md) - Aug2022
+10. [Enabling passwordless login to Azure Portal using MS Authenticator](post26passwdless.md) - Oct2022
 
 #### AWS
 1. [Installing NGINX in AWS Linux EC2 during cloud-init](post17ec2nginx.md) - April2022
