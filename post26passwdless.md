@@ -7,7 +7,7 @@ In this post, I will go through the steps of enabling passwordless authenticatio
 ![comparisonofauthc.png](https://github.com/chianw/chianw/blob/main/comparisonofauthc.png)
 
 
-**1. First go to Azure Active Directory > Manage > Security **
+**1. First go to Azure Active Directory > Manage > Security**
 
 Select Authentication methods
 
