@@ -12,3 +12,7 @@ In this post, I will go through the steps of enabling passwordless authenticatio
 Select Authentication methods
 
 ![passwdless1.png](https://github.com/chianw/chianw/blob/main/passwdless1.png)
+
+Then select Microsoft Authenticator
+
+![passwdless2.png](https://github.com/chianw/chianw/blob/main/passwdless2.png)
