@@ -4,7 +4,7 @@ In this post, I will go through the steps of enabling passwordless authenticatio
 
 > Passwordless authentication is now the recommended method to log into Azure portal. See [here](https://www.microsoft.com/en-us/security/business/solutions/passwordless-authentication). To enable Passwordless sign-in to Azure, you need XXXX license. 
 
-(https://github.com/chianw/chianw/blob/main/comparisonofauthc.png)
+![comparisonofauthc.png](https://github.com/chianw/chianw/blob/main/comparisonofauthc.png)
 
 
 **1. Overview of setup - Azure SQL server and databases**
