@@ -16,3 +16,8 @@ Select Authentication methods
 Then select Microsoft Authenticator
 
 ![passwdless2.png](https://github.com/chianw/chianw/blob/main/passwdless2.png)
+
+**2. Enable passwordless for the user(s)**
+
+![passwdless3.png](https://github.com/chianw/chianw/blob/main/passwdless3.png)
+
