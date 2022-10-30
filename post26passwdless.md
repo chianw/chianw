@@ -31,6 +31,10 @@ Here it is assumed that the user already has MS authenticator installed and regi
 
 ![passwdless7new.png](https://github.com/chianw/chianw/blob/main/passwdless7new.png)
 
+**5. When signing in you will be prompted to enter a number on MS authenticator that matches what is shown in the sign-in portal**
+
+![passwdless8.png](https://github.com/chianw/chianw/blob/main/passwdless8.png)
+
 
 
 
