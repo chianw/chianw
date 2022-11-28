@@ -15,6 +15,7 @@ I'm currently working as a technical specialist in Singapore with a focus on sof
 9. [Route Server at Hub for spoke to spoke traffic](post23hubspokers.md) - Aug2022
 10. [Enabling passwordless login to Azure Portal using MS Authenticator](post26passwdless.md) - Oct2022
 11. [S2S VPN between Azure VWAN Hub and AWS Transit GW](post27s2svwanaws.md) - Nov2022
+12. [Azure Private DNS zones and Private DNS Resolver](post28azuredns.md) - Nov2022
 
 #### AWS
 1. [Installing NGINX in AWS Linux EC2 during cloud-init](post17ec2nginx.md) - April2022
