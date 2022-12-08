@@ -1,4 +1,4 @@
-## Testing end-to-end TLS with Application Gateway and HTTPS-enabled NGINX
+## HealthCheck probe and App Gateway Backend Settings for end to end SSL
 
 I was testing end-to-end TLS encryption using Azure Application Gateway and a HTTPS-enabled NGINX using self-signed certificate on the NGINX web server, and a separate self-signed certificate in PFX format installed on the Application Gateway. The Azure Application Gateway accepts certificates in PFX format for installation. This means there are 2 separate self-signed certificates involved, one on the NGINX web server and one on the Application Gateway itself. In production, you should be using public CA signed certificates instead of self-signed certificates. 
 
