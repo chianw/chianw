@@ -8,7 +8,7 @@ This post aims to document the supported syntax when using FQDN filtering in App
 
 
 
-**FQDN filtering syntax to block *.microsoft.com**
+**FQDN filtering syntax to block \*.microsoft.com**
 
 
 ![denyapplicationrule.png](https://github.com/chianw/chianw/blob/main/denyapplicationrule.png)
