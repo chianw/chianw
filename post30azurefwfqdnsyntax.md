@@ -1,4 +1,4 @@
-## Azure Firewall Premium - syntax for FQDN filtering in Application Rules
+## Azure Firewall - syntax for FQDN filtering in Application Rules
 
 Azure Firewall Rule Collections can be of type DNAT, Network or Application. In a Network Rule Collection, FQDN filtering is based on a static FQDN, for e.g. www.google.com but no wildcards like *.google.com . In Application Rule Collections, FQDN filtering supports wildcards like *.google.com 
 
