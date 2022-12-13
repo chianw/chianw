@@ -17,6 +17,7 @@ I'm currently working as a technical specialist in Singapore with a focus on sof
 11. [S2S VPN between Azure VWAN Hub and AWS Transit GW](post27s2svwanaws.md) - Nov2022
 12. [Azure Private DNS zones and Private DNS Resolver](post28azuredns.md) - Nov2022
 13. [HealthCheck probe and App Gateway Backend Settings for end to end SSL](post29appgwssl.md) - Dec2022
+14. [Azure Firewall - Syntax for FQDN filtering in Application Rule Collections](post30azurefwfqdnsyntax.md) - Dec2022
 
 #### AWS
 1. [Installing NGINX in AWS Linux EC2 during cloud-init](post17ec2nginx.md) - April2022
