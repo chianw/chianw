@@ -4,6 +4,8 @@ I was testing end-to-end TLS encryption using Azure Application Gateway v1 and a
 
 > Note for end to end SSL on Application Gateway v1, the backend web server certificate should be uploaded to the Application Gateway in order for it to trust the web server. In Application Gateway v2, you must upload the root CA public certificate to the Application Gateway instead of the backend web server certificate and this root CA must be the one that signed and issued the web server certificate.
 
+![appgwv1-uploadwebcert.png](https://github.com/chianw/chianw/blob/main/appgwv1-uploadwebcert.png)
+
 
 With this setup, this means there is end-to-end TLS between web client and Application Gateway, and between Application Gateway and the web server. In this setup, the following Common Names are used on the certificates issued to the Application Gateway and to the NGINX web server:
 - CN=alpharednginx.io for the web server
