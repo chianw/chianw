@@ -1,6 +1,9 @@
-## HealthCheck probe and App Gateway Backend Settings for end to end SSL
+## HealthCheck probe and App Gateway v1 Backend Settings for end to end SSL
 
-I was testing end-to-end TLS encryption using Azure Application Gateway and a HTTPS-enabled NGINX using self-signed certificate on the NGINX web server, and a separate self-signed certificate in PFX format installed on the Application Gateway. The Azure Application Gateway accepts certificates in PFX format for installation. This means there are 2 separate self-signed certificates involved, one on the NGINX web server and one on the Application Gateway itself. In production, you should be using public CA signed certificates instead of self-signed certificates. 
+I was testing end-to-end TLS encryption using Azure Application Gateway v1 and a HTTPS-enabled NGINX using self-signed certificate on the NGINX web server, and a separate self-signed certificate in PFX format installed on the Application Gateway. The Azure Application Gateway accepts certificates in PFX format for installation. This means there are 2 separate self-signed certificates involved, one on the NGINX web server and one on the Application Gateway itself. In production, you should be using public CA signed certificates instead of self-signed certificates. 
+
+> Note for end to end SSL on Application Gateway v1, the backend web server certificate should be uploaded to the Application Gateway in order for it to trust the web server. In Application Gateway v2, you must upload the root CA public certificate to the Application Gateway instead of the backend web server certificate and this root CA must be the one that signed and issued the web server certificate.
+
 
 With this setup, this means there is end-to-end TLS between web client and Application Gateway, and between Application Gateway and the web server. In this setup, the following Common Names are used on the certificates issued to the Application Gateway and to the NGINX web server:
 - CN=alpharednginx.io for the web server
