@@ -7,6 +7,10 @@ I was testing end-to-end TLS encryption using Azure Application Gateway v1 and a
 ![appgwv1-uploadwebcert.png](https://github.com/chianw/chianw/blob/main/appgwv1-uploadwebcert.png)
 
 
+![appgwv2-uploadwebcert.png](https://github.com/chianw/chianw/blob/main/appgwv2-uploadwebcert.png)
+
+
+
 With this setup, this means there is end-to-end TLS between web client and Application Gateway, and between Application Gateway and the web server. In this setup, the following Common Names are used on the certificates issued to the Application Gateway and to the NGINX web server:
 - CN=alpharednginx.io for the web server
 - CN=bravoblue.io for the application gateway
