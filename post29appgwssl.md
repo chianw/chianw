@@ -7,6 +7,8 @@ I was testing end-to-end TLS encryption using Azure Application Gateway v1 and a
 ![appgwv1-uploadwebcert.png](https://github.com/chianw/chianw/blob/main/appgwv1-uploadwebcert.png)
 
 
+> The requirement to upload root CA certificate for Application Gateway v2 is documented (here)[https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-backend-health-troubleshooting#trusted-root-certificate-mismatch]
+
 ![appgwv2-uploadwebcert.png](https://github.com/chianw/chianw/blob/main/appgwv2-uploadwebcert.png)
 
 
