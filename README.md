@@ -20,6 +20,7 @@ I'm currently working as a technical specialist in Singapore with a focus on sof
 14. [Azure Firewall - Syntax for FQDN filtering in Application Rule Collections](post30azurefwfqdnsyntax.md) - Dec2022
 15. [Applying NSG to App Services/Function Apps with vnet integration](post31nsgtoappsvc.md) - Dec2022
 16. [Connecting App Service to virtual network in a different region using Gateway-required virtual network integration](post32appsvcremotevnet.md) - Dec2022
+17. [Using Traffic Manager to load balance traffic to App Services with a custom domain](post33trafficmgrappsvc.md) - Dec2022
 
 #### AWS
 1. [Installing NGINX in AWS Linux EC2 during cloud-init](post17ec2nginx.md) - April2022
