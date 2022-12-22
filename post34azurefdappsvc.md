@@ -5,11 +5,13 @@ In this example, Azure Front Door is used to provide front-end caching capabilit
 The normal steps of creating App Services and Traffic Manager are not documented here, but rather the more important points are stated in this article for the setup to work. In addition to creating Front Door and its backend origin of App Service, this example also uses an App Service Domain used to manage the DNS zone for azfasttrack.com
 
 **DNS zone for azfasttrack.com**
+
 Here we need to add a CNAME for www.azfasttrack.com pointing to the Azure Front Door FQDN. Note that the 2nd TXT record entry is automatically added to this DNS zone for validation after this custom domain has been added in Front Door
 
 ![afdappsvc-customdomain6.png](https://github.com/chianw/chianw/blob/main/afdappsvc-customdomain6.png)
 
 **Adding www.azfasttrack.com as custom domain for Azure Front Door**
+
 Note that after adding the custom domain to the Front Door, you need to validate the association which will automatically add TXT record into the DNS zone as per earlier screenshot, and you need to associate this custom domain with the Front Door origin.
 
 ![afdappsvc-customdomain4.png](https://github.com/chianw/chianw/blob/main/afdappsvc-customdomain4.png)
