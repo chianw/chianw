@@ -18,13 +18,15 @@ This is configured as Basic SKU with policy-based VPN, take note of the public I
 
 
 **IPSEC site-to-site connection for East US**
-Note that staus as connected, as the remote gateway is a local network gateway representing West US VPN gateway
+
+Note that status as connected, as the remote gateway is a local network gateway representing West US VPN gateway
 
 ![s2spolicyvpn-4.png](https://github.com/chianw/chianw/blob/main/s2spolicyvpn-4.png)
 
 
 **IPSEC site-to-site connection for West US**
-Note that staus as connected, as the remote gateway is a local network gateway representing East US VPN gateway
+
+Note that status as connected, as the remote gateway is a local network gateway representing East US VPN gateway
 
 ![s2spolicyvpn-5.png](https://github.com/chianw/chianw/blob/main/s2spolicyvpn-5.png)
 
