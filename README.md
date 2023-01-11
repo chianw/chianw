@@ -1,5 +1,5 @@
 ### Introduction
-I'm currently working as a technical specialist in Singapore with a focus on software-defined networking, security and cloud technologies
+I'm currently working as a cloud solutions architect in Singapore with a focus on networking and security.
 
 
 ### Topics
