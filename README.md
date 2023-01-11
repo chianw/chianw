@@ -23,6 +23,7 @@ I'm currently working as a cloud solutions architect in Singapore with a focus o
 17. [Using Traffic Manager to load balance traffic to App Services with a custom domain](post33trafficmgrappsvc.md) - Dec2022
 18. [Using Front Door with custom App Service Domain for App Services](post34azurefdappsvc.md) - Jan2023
 19. [Using policy-based S2S VPN for vnet-to-vnet connectivity](post35s2spolicy.md) - Jan2023
+20. [Using Azure FrontDoor with APEX domain registered via 3rd party domain registrar](post36afdapexdomain.md) - Jan2023
 
 #### AWS
 1. [Installing NGINX in AWS Linux EC2 during cloud-init](post17ec2nginx.md) - April2022
