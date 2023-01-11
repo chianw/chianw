@@ -1,6 +1,6 @@
 ## Using Azure Front Door with custom domain for App Services
 
-In this example, Azure Front Door is used to provide front-end caching capabilities for an App Service application. By default, Azure Front Door is accessible via a url like  https://xxxx.azurefd.net but in this example we configure a custom domain https://www.azfasttrack.com that provides access to Front Door and its backend App Service application. 
+In this example, Azure Front Door is used to provide front-end caching capabilities for an App Service application. By default, Azure Front Door is accessible via a url like  https://xxxx.azurefd.net but in this example we configure a custom App Service Domain https://www.azfasttrack.com that provides access to Front Door and its backend App Service application. With a custom App Service Domain, the domain and the Name Servers providing DNS resolution are all managed within Azure. Later I will be sharing one example where the domain is registered in GoDaddy but Azure DNS Zone is used to provide Name Server resolution for the domain.
 
 The normal steps of creating App Services and Traffic Manager are not documented here, but rather the more important points are stated in this article for the setup to work. In addition to creating Front Door and its backend origin of App Service, this example also uses an App Service Domain used to manage the DNS zone for azfasttrack.com
 
