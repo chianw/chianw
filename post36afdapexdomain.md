@@ -12,6 +12,7 @@ It is important to add an APEX record into the Azure DNS zone of azcloudhub.com 
 
 ![APEXrecord.png](https://github.com/chianw/chianw/blob/main/APEXrecord.png)
 
+Replace GoDaddy's DNS servers with all four of Azure DNS servers.
 
 ![afdapexdomain2.png](https://github.com/chianw/chianw/blob/main/afdapexdomain2.png)
 
