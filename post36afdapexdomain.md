@@ -10,7 +10,7 @@ In this step an Azure DNS zone of azcloudhub.com is created and the 4 Azure DNS 
 
 It is important to add an APEX record into the Azure DNS zone of azcloudhub.com if it does not exist already. This is so that the APEX domain is available for selection from the drop down box when creating the custom domain from Azure Front Door. See below screenshot.
 
-![APEXrecord.png.png](https://github.com/chianw/chianw/blob/main/APEXrecord.png.png)
+![APEXrecord.png](https://github.com/chianw/chianw/blob/main/APEXrecord.png)
 
 
 ![afdapexdomain2.png](https://github.com/chianw/chianw/blob/main/afdapexdomain2.png)
