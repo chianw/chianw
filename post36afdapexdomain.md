@@ -36,7 +36,7 @@ After the domain is created, click on the pending validation link and it will br
 
 **Verify TXT and CNAME record on the Azure DNS zone**
 
-If the earlier step was done correctly, you should see a validation TXT record and CNAME record added in the DNS zone.
+If the earlier step was done correctly, you should see a validation TXT record and CNAME record added in the DNS zone. Note that the original APEX record in the domain was over-written automatically to point to Azure Front Door's FQDN
 
 ![afdapexdomain1.png](https://github.com/chianw/chianw/blob/main/afdapexdomain1.png)
 
