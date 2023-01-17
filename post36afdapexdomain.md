@@ -8,6 +8,11 @@ In this example, I have registered a public domain azcloudhub.com with godaddy.c
 
 In this step an Azure DNS zone of azcloudhub.com is created and the 4 Azure DNS servers that are in this zone are used to replace the original ones in godaddy.com . 
 
+It is important to add an APEX record into the Azure DNS zone of azcloudhub.com if it does not exist already. This is so that the APEX domain is available for selection from the drop down box when creating the custom domain from Azure Front Door. See below screenshot.
+
+![APEXrecord.png.png](https://github.com/chianw/chianw/blob/main/APEXrecord.png.png)
+
+
 ![afdapexdomain2.png](https://github.com/chianw/chianw/blob/main/afdapexdomain2.png)
 
 As a result, godaddy's DNS configuration portal states that the management of DNS for this domain is no longer under godaddy which is expected since we are using Azure DNS instead
