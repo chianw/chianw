@@ -25,6 +25,7 @@ I'm currently working as a cloud solutions architect in Singapore with a focus o
 19. [Using policy-based S2S VPN for vnet-to-vnet connectivity](post35s2spolicy.md) - Jan2023
 20. [Using Azure FrontDoor with APEX domain registered via 3rd party domain registrar](post36afdapexdomain.md) - Jan2023
 21. [Using App GW with multi-site SSL](post37appgwmultisitessl.md) - Jan2023
+22. [Changing the default location of Docker container image file system](post38.md) - Mar2023
 
 #### AWS
 1. [Installing NGINX in AWS Linux EC2 during cloud-init](post17ec2nginx.md) - April2022
