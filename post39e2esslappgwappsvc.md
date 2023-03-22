@@ -77,3 +77,11 @@ Since the App Service certificate is managed and issued by public CA, select "We
 ## verify access to https://www.azcloudhub.com
 
 ![test](https://github.com/chianw/chianw/raw/main/e2eSSLAppGWAppSvc12.png)
+
+## Verify direct access to the App Service
+
+Rightfully you should be configuring Inbound Access Restrictions on the App Service so that it is accessible only via the App Gateway. Otherwise there's nothing stopping clients from directly accessing the App Service. Just to prove the case, the host file entry is modified to map www.azcloudhub.com to the public IP of the App Service and a browser is used to access https://www.azcloudhub.com . It shows that the site is accessible and that certificate used is that which has been issued to the App Service by DigiCert.
+
+![modifyhost](https://github.com/chianw/chianw/raw/main/e2eSSLAppGWAppSvc14.png)
+
+![accessappsvc](https://github.com/chianw/chianw/raw/main/e2eSSLAppGWAppSvc13.png)
