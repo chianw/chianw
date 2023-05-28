@@ -27,6 +27,7 @@ I'm currently working as a cloud solutions architect in Singapore with a focus o
 21. [Using App GW with multi-site SSL](post37appgwmultisitessl.md) - Jan2023
 22. [Changing the default location of Docker container image file system](post38changedockerimagelocation.md) - Mar2023
 23. [End to End SSL with custom domain on Application Gateway Standard V2 and App Services](post39e2esslappgwappsvc.md) - Mar2023
+24. [Creating certificates with serverAuth extendedKeyUsage for Azure App Service](post41certificateeku.md) - May2023
 
 #### AWS
 1. [Installing NGINX in AWS Linux EC2 during cloud-init](post17ec2nginx.md) - April2022
