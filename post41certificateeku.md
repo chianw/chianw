@@ -26,19 +26,19 @@ commonName = ntucapp1.azfasttrack.com
 [v3_req]
 extendedKeyUsage = serverAuth
 ```
-## generate certificate from CSR and specify cnf file which includes serverAuth extension
+## Generate certificate from CSR and specify cnf file which includes serverAuth extension
 
 Here using -extensions flag to reference the code block within the .cnf file that contains the extendedKeyUsage, in this case it is v3_req
 ```
 openssl x509 -req -in mycsr.csr -CA myrootca.crt -CAkey myrootca.key -CAcreateserial -out mysignedcert.crt -days 365 -sha256 -extfile myopenssl.cnf -extensions v3_req
 ```
 
-## view the certificate to check it contains extendedKeyUsage
+## View the certificate to check it contains extendedKeyUsage
 ```
  openssl x509 -in mysignedcert.crt -text
 ```
 
-## convert the crt file into pfx before loading into Azure App Service
+## Convert the crt file into pfx before loading into Azure App Service
 ```
 openssl pkcs12 -export -inkey mycert.key -in mysignedcert.crt -out mysignedcert.pfx
 ```
