@@ -28,7 +28,7 @@ extendedKeyUsage = serverAuth
 ```
 ## generate certificate from CSR and specify cnf file which includes serverAuth extension
 
-Here using <mark>-extensions</mark> flag to reference the code block within the .cnf file that contains the <mark>extendedKeyUsage</mark>
+Here using -extensions flag to reference the code block within the .cnf file that contains the extendedKeyUsage, in this case it is v3_req
 ```
 openssl x509 -req -in mycsr.csr -CA myrootca.crt -CAkey myrootca.key -CAcreateserial -out mysignedcert.crt -days 365 -sha256 -extfile myopenssl.cnf -extensions v3_req
 ```
