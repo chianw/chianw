@@ -10,4 +10,3 @@
 - User(s) must be assigned Virtual Machine User Login or Virtual Machine Administrator Login roles at the same Resource Group as where Windows VM reside
 - client used for logging in must have Azure CLI with SSH extension installed
 
-## The target Azure Windows VM will be automatically joined to Azure AD tenant, while the client used to RDP to it has to be registered to the same Azure AD tenant
