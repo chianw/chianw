@@ -28,13 +28,17 @@ extendedKeyUsage = serverAuth
 ```
 ## generate certificate from CSR and specify cnf file which includes serverAuth extension
 
-Here using -extensions flag to reference the code block within the .cnf file that contains the ==extendedKeyUsage==
+Here using <mark>-extensions</mark> flag to reference the code block within the .cnf file that contains the <mark>extendedKeyUsage</mark>
 ```
 openssl x509 -req -in mycsr.csr -CA myrootca.crt -CAkey myrootca.key -CAcreateserial -out mysignedcert.crt -days 365 -sha256 -extfile myopenssl.cnf -extensions v3_req
 ```
 
-## view the certificate
- openssl x509 -in ntucapp1new.crt -text![image](https://github.com/chianw/chianw/assets/91816369/04e12505-9a50-4efa-8ff4-fcc41afafc0a)
+## view the certificate to check it contains extendedKeyUsage
+```
+ openssl x509 -in mysignedcert.crt -text
+```
 
-
-
+## convert the crt file into pfx before loading into Azure App Service
+```
+openssl pkcs12 -export -inkey mycert.key -in mysignedcert.crt -out mysignedcert.pfx
+```
