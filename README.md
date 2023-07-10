@@ -29,6 +29,7 @@ I'm currently working as a cloud solutions architect in Singapore with a focus o
 23. [End to End SSL with custom domain on Application Gateway Standard V2 and App Services](post39e2esslappgwappsvc.md) - Mar2023
 24. [Creating certificates with serverAuth extendedKeyUsage for Azure App Service](post41certificateeku.md) - May2023
 25. [Using AzureAD credentials to log into Windows or Linux VM](post40azureadloginvm.md) - May2023
+26. [Using basic authentication to access kudo/scm console for App Service](post42basicauthkudoconsole.md) - July2023
 
 #### AWS
 1. [Installing NGINX in AWS Linux EC2 during cloud-init](post17ec2nginx.md) - April2022
