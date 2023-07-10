@@ -29,3 +29,7 @@ Here you can reset or update the password for the User Scope credentials
 ## Log into the URL for kudo/SCM supporting basic authentication
 The url is https://<appsvc_name>.scm.<asev3_name>.appserviceenvironment.net/basicauth
 
+Useful links:
+- https://learn.microsoft.com/en-us/azure/app-service/resources-kudu#access-kudu-for-your-app
+- https://github.com/projectkudu/kudu/wiki/Accessing-the-kudu-service#authentication
+
