@@ -5,7 +5,7 @@ There may be some situations where you will want to use basic authentication to 
 The steps involved are:
  - enable basic authentication for the App Service
  - reset or update the credentials used for basic authentication
- - access the kudo/SCM URL for basic authentication at 
+ - access the kudo/SCM URL for basic authentication
 
 ## Enable basic authentication for the App Service via CLI, the second command below also enables FTP
 ```
