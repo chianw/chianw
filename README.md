@@ -30,7 +30,8 @@ I'm currently working as a cloud solutions architect in Singapore with a focus o
 24. [Creating certificates with serverAuth extendedKeyUsage for Azure App Service](post41certificateeku.md) - May2023
 25. [Using AzureAD credentials to log into Windows or Linux VM](post40azureadloginvm.md) - May2023
 26. [Using basic authentication to access kudo/scm console for App Service](post42basicauthkudoconsole.md) - July2023
-
+27. [Using AzureAD credentials to log into Azure Virtual Desktops](post43avdlogin_azuread.md) - July2023
+    
 #### AWS
 1. [Installing NGINX in AWS Linux EC2 during cloud-init](post17ec2nginx.md) - April2022
 2. [Copying SSH private key to AWS EC2 bastion host](post18scpaws.md) - May2022
