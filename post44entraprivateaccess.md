@@ -63,6 +63,12 @@ After the enterprise application is created, click on it and go to ***Users and 
 
 ![entraprivateaccess19.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess19.png)
 
+### Step 6 - Enable Private Access Profile traffic forwarding
+
+From Entra Admin portal, enable Private Access Profile traffic forwarding and check that it is linked to the Enterprise application created
+
+![entraprivateaccess30.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess30.png)
+
 ### Step 6 - Join the remote access client to Azure AD
 
 On the remote access client, go to ***Set up work or school account*** and the choose the option of ***Join this device to Azure Active Directory***. Follow the rest of the steps in the wizard making sure you sign in as the user who is allowed to use the enterprise application.
