@@ -15,6 +15,7 @@ The following are pre-requisites for the solution:
 
  - Entra Premium P1 licenses 
  - Azure-AD **joined** remote clients
+ - [Global Secure Administrator](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#global-secure-access-administrator) to perform required configuration on Entra Admin portal
 
 ### Step 1 - Download the application proxy connector from Entra Admin Center
 The Entra Admin Center is accessible at https://entra.microsoft.com and you have to log in with your credentials. Download the application proxy connector and note the installation pre-requisites.
