@@ -20,3 +20,16 @@ The following are pre-requisites for the solution:
 The Entra Admin Center is accessible at https://entra.microsoft.com and you have to log in with your credentials. Download the application proxy connector and note the installation pre-requisites.
 
 ![entraprivateaccess1.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess1.png)
+
+### Step 2 - install the application proxy connector
+Before installing application proxy connector, first disable IE security configuration. 
+
+![entraprivateaccess5.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess5.png)
+
+During installation you'll be prompted to sign into Entra
+
+![entraprivateaccess6.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess6.png)
+
+After successful login, the installation of application proxy connector should be successful.
+
+![entraprivateaccess8.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess8.png)
