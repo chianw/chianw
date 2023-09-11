@@ -31,6 +31,7 @@ I'm currently working as a cloud solutions architect in Singapore with a focus o
 25. [Using AzureAD credentials to log into Windows or Linux VM](post40azureadloginvm.md) - May2023
 26. [Using basic authentication to access kudo/scm console for App Service](post42basicauthkudoconsole.md) - July2023
 27. [Using AzureAD credentials to log into Azure Virtual Desktops](post43avdlogin_azuread.md) - July2023
+28. [Entra Private Access basic testing](post44entraprivateaccess.md) - Sept2023
     
 #### AWS
 1. [Installing NGINX in AWS Linux EC2 during cloud-init](post17ec2nginx.md) - April2022
