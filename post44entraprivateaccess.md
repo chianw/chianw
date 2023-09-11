@@ -62,3 +62,6 @@ After the enterprise application is created, click on it and go to ***Users and 
 
 ![entraprivateaccess19.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess19.png)
 
+### Step 6 - Download the Global Secure Access client from Entra Admin portal and install on the remote AzureAD-joined client
+
+![entraprivateaccess20.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess20.png)
