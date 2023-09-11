@@ -14,7 +14,8 @@ The advantage of this is that there is no need to open up inbound ports on the o
 The following are pre-requisites for the solution:
 
  - Entra Premium P1 licenses 
- - Azure-AD **joined** remote clients
+ - Azure-AD **joined** remote clients which must be 64bit Windows 10 or Windows 11
+ - Minimum Windows 2012R2 server or later with minimum .NET v4.7.1+ to intall the Application Proxy Connector
  - [Global Secure Administrator](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#global-secure-access-administrator) to perform required configuration on Entra Admin portal
 
 ### Step 1 - Download the application proxy connector from Entra Admin Center
@@ -80,4 +81,17 @@ On AzureAD, the device is shown as ***Azure AD Joined***
 
 ![entraprivateaccess20.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess20.png)
 
+The GSA client installation is straightforward, just launch the installer on the remote access client and follow the step by step instructions. 
+
 ![entraprivateaccess21.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess21.png)
+
+### Step 8 - Test access to IIS web server from remote access client
+
+At this stage, you will be able to launch the GSA client which will acquire traffic to the IIS web server 10.0.0.5 on TCP port 80. Browsing to http://10.0.0.5 on the remote access client should bring up the page for the IIS web server. 
+
+![entraprivateaccess25.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess25.png)
+
+![entraprivateaccess26.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess26.png)
+
+
+
