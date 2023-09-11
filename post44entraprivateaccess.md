@@ -51,3 +51,8 @@ Here we create a connector group and add the connector to it. We also verify tha
 Connector group with connector status as OK. Notice the recommendation to have at least 2 connectors in a group. Since this is for testing we will only use 1 connector
 
 ![entraprivateaccess12.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess12.png)
+
+### Create new enterprise application and add application segment
+Here we create a new application to represent the on-premise IIS web server. Associate it with the connector group created earlier and define the IP/port of the on-premise IIS webserver in the application segment. 
+
+![entraprivateaccess29.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess29.png)
