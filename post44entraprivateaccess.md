@@ -69,7 +69,7 @@ From Entra Admin portal, enable Private Access Profile traffic forwarding and ch
 
 ![entraprivateaccess30.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess30.png)
 
-### Step 6 - Join the remote access client to Azure AD
+### Step 7 - Join the remote access client to Azure AD
 
 On the remote access client, go to ***Set up work or school account*** and the choose the option of ***Join this device to Azure Active Directory***. Follow the rest of the steps in the wizard making sure you sign in as the user who is allowed to use the enterprise application.
 
@@ -83,7 +83,7 @@ On AzureAD, the device is shown as ***Azure AD Joined***
 
 ![entraprivateaccess24.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess24.png)
 
-### Step 7 - Download the Global Secure Access client from Entra Admin portal and install on the remote AzureAD-joined client
+### Step 8 - Download the Global Secure Access client from Entra Admin portal and install on the remote AzureAD-joined client
 
 ![entraprivateaccess20.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess20.png)
 
@@ -91,7 +91,7 @@ The GSA client installation is straightforward, just launch the installer on the
 
 ![entraprivateaccess21.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess21.png)
 
-### Step 8 - Test access to IIS web server from remote access client
+### Step 9 - Test access to IIS web server from remote access client
 
 At this stage, you will be able to launch the GSA client which will acquire traffic to the IIS web server 10.0.0.5 on TCP port 80. Browsing to http://10.0.0.5 on the remote access client should bring up the page for the IIS web server. 
 
