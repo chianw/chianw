@@ -42,3 +42,12 @@ You can check on Entra admin center that the connector is registered.
 You can also check on the Windows services of the host that the connector is running.
 
 ![entraprivateaccess10.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess10.png)
+
+### Create connector group and add the connector to it
+Here we create a connector group and add the connector to it. We also verify that the connector status is OK
+
+![entraprivateaccess11.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess11.png)
+
+Connector group with connector status as OK. Notice the recommendation to have at least 2 connectors in a group. Since this is for testing we will only use 1 connector
+
+![entraprivateaccess12.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess12.png)
