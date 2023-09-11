@@ -6,6 +6,8 @@ The remote client is a VM in another virtual network that has the Global Secure 
 
 The GSA's outbound connection to Microsoft Cloud will ***meet*** the Connector's outbound connection to form a conduit for the client to access the IIS web server. 
 
+[Entra Private Access](https://github.com/chianw/chianw/blob/main/entraprivateaccess.png)
+
 The advantage of this is that there is no need to open up inbound ports on the on-premise network to allow remote clients to access the resources within it. 
 
 ## Pre-requisites
