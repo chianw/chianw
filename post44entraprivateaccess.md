@@ -79,3 +79,5 @@ On AzureAD, the device is shown as ***Azure AD Joined***
 ### Step 7 - Download the Global Secure Access client from Entra Admin portal and install on the remote AzureAD-joined client
 
 ![entraprivateaccess20.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess20.png)
+
+![entraprivateaccess21.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess21.png)
