@@ -1,5 +1,5 @@
 ### Introduction
-I'm currently working as a cloud solutions architect in Singapore with a focus on networking and security.
+I'm currently working as a cloud solutions architect in Singapore with a focus on core infrastructure.
 
 
 ### Topics
