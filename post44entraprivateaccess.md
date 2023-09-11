@@ -64,7 +64,7 @@ After the enterprise application is created, click on it and go to ***Users and 
 
 ### Step 6 - Join the remote access client to Azure AD
 
-On the remote access client, go to ***Set up work or school account*** and the choose the option of ***Join this device to Azure Active Directory***. Follow the rest of the steps in the wizard
+On the remote access client, go to ***Set up work or school account*** and the choose the option of ***Join this device to Azure Active Directory***. Follow the rest of the steps in the wizard making sure you sign in as the user who is allowed to use the enterprise application.
 
 ![entraprivateaccess22.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess22.png)
 
@@ -72,7 +72,9 @@ View the successful joining of the device to Azure AD
 
 ![entraprivateaccess23.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess23.png)
 
+On AzureAD, the device is shown as ***Azure AD Joined***
 
+![entraprivateaccess24.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess24.png)
 
 ### Step 7 - Download the Global Secure Access client from Entra Admin portal and install on the remote AzureAD-joined client
 
