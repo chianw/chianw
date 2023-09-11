@@ -33,3 +33,12 @@ During installation you'll be prompted to sign into Entra
 After successful login, the installation of application proxy connector should be successful.
 
 ![entraprivateaccess8.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess8.png)
+
+### Verify successful application proxy connector installation
+You can check on Entra admin center that the connector is registered.
+
+![entraprivateaccess9.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess9.png)
+
+You can also check on the Windows services of the host that the connector is running.
+
+![entraprivateaccess10.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess10.png)
