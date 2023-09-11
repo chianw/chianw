@@ -35,7 +35,7 @@ After successful login, the installation of application proxy connector should b
 
 ![entraprivateaccess8.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess8.png)
 
-### Verify successful application proxy connector installation
+### Step 3 - Verify successful application proxy connector installation
 You can check on Entra admin center that the connector is registered.
 
 ![entraprivateaccess9.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess9.png)
@@ -44,7 +44,7 @@ You can also check on the Windows services of the host that the connector is run
 
 ![entraprivateaccess10.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess10.png)
 
-### Create connector group and add the connector to it
+### Step 4 - Create connector group and add the connector to it
 Here we create a connector group and add the connector to it. We also verify that the connector status is OK
 
 ![entraprivateaccess11.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess11.png)
@@ -53,7 +53,7 @@ Connector group with connector status as OK. Notice the recommendation to have a
 
 ![entraprivateaccess12.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess12.png)
 
-### Create new enterprise application and add application segment
+### Step 5 - Create new enterprise application and add application segment
 Here we create a new application to represent the on-premise IIS web server. Associate it with the connector group created earlier and define the IP/port of the on-premise IIS webserver in the application segment. 
 
 ![entraprivateaccess29.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess29.png)
