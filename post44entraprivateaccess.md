@@ -4,11 +4,13 @@ In this example, [Global Secure Access](https://learn.microsoft.com/en-gb/azure/
 
 The remote client is a VM in another virtual network that has the Global Secure Access (GSA) client installed. This VM **must** be Azure AD joined, not just registered. The GSA client will make outbound encrypted HTTP/2 GRPC connections to Microsoft Cloud. 
 
-The GSA's outbound connection to Microsoft Cloud will ***meet*** the Connector's outbound connection to form a conduit for the client to access the IIS web server. 
-
 ![Entra Private Access](https://github.com/chianw/chianw/blob/main/entraprivateaccess.png)
 
-The advantage of this is that there is no need to open up inbound ports on the on-premise network to allow remote clients to access the resources within it. 
+## Advantages
+- there is no need to open up inbound ports on the on-premise network to allow remote clients to access the resources within it
+- part of the traffic is carried out Microsoft Global Backbone which spans across 61 regions and 185 global points-of-presence, with mesh edge nodes around the world to optimally connect users
+- there is no need to manage VPN tunnels, VPN address pools
+- you can easily layer on additional security capabilities like conditional access, multi-factor authentication for remote application access
 
 ## Pre-requisites
 The following are pre-requisites for the solution:
