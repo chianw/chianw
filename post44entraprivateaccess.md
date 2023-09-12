@@ -102,4 +102,8 @@ At this stage, you will be able to launch the GSA client which will acquire traf
 ![entraprivateaccess26.png](https://github.com/chianw/chianw/blob/main/entraprivateaccess26.png)
 
 
+#### Useful links
+[Microsoft Entra Expands into Security Service Edge with Two New Offerings](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-expands-into-security-service-edge-with-two-new/ba-p/3847829)
+[Microsoft Entra Private Access: An Identity-Centric Zero Trust Network Access Solution](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-private-access-an-identity-centric-zero-trust/ba-p/3905451)
+
 
