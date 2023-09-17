@@ -12,3 +12,6 @@
 - there can be multiple NAT GW in a VPC if there are multiple AZ in the VPC
 - comes into use when traffic egresses from VPC to Internet
 - NAT GW has to be deployed in public subnet which is associated with route table having 0.0.0.0/0 pointing to IGW, otherwise it will not be able to perform SNAT for resources routing Internet-bound traffic to it
+
+## Comparing Network ACLs and Security Group
+The following link from AWS documentation does a [good comparison of NACL and SG](https://docs.aws.amazon.com/vpc/latest/userguide/infrastructure-security.html#VPC_Security_Comparison)
