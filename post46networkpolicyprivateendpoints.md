@@ -4,9 +4,12 @@ By default, a NSG applied to a subnet that contains private endpoints will not h
 
 To have NSG control **inbound** traffic to the private endpoints in the subnet, you have to enable NSG in the Network Policy for the subnet as show below. Note that you cannot use NSG to control outbound traffic from private endpoint, only inbound traffic since PAAS service does not originate traffic - see this [article](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview#nsg-more-considerations)
 
+## Enable Network Policy for private endpoints at the subnet level
 ![peppolicy1.png](https://github.com/chianw/chianw/blob/main/peppolicy1.png)
 
 Also note that you have to reference the private IP address of the private endpoint and not service tags as the latter is a list of **public IPs** of the service maintained by Microsoft. Here you are trying to control traffic based on the private endpoint's private IP. 
+
+## Creating NSG rule to block inbound traffic to the private endpoint of a storage account
 
 In the below example, **10.0.0.4** is the private endpoint IP of a storage account.
 
