@@ -33,6 +33,7 @@ I'm currently working as a cloud solutions architect in Singapore with a focus o
 27. [Using AzureAD credentials to log into Azure Virtual Desktops](post43avdlogin_azuread.md) - July2023
 28. [Microsoft Entra Private Access basic testing](post44entraprivateaccess.md) - Sept2023
 29. [Comparing Internet Gateway and NAT Gateway in AWS](post45awscompareigwnatgw.md) - Sept2023
+30. [Network Policy for private endpoints in Azure](post46networkpolicyprivateendpoints.md) - Oct2023
     
 #### AWS
 1. [Installing NGINX in AWS Linux EC2 during cloud-init](post17ec2nginx.md) - April2022
