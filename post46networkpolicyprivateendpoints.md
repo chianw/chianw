@@ -6,4 +6,12 @@ To have NSG control **inbound** traffic to the private endpoints in the subnet, 
 
 ![peppolicy1.png](https://github.com/chianw/chianw/blob/main/peppolicy1.png)
 
+Also note that you have to reference the private IP address of the private endpoint and not service tags as the latter is a list of **public IPs** of the service maintained by Microsoft. Here you are trying to control traffic based on the private endpoint's private IP. 
 
+In the below example, **10.0.0.4** is the private endpoint IP of a storage account.
+
+![peppolicy4.png](https://github.com/chianw/chianw/blob/main/peppolicy4.png)
+
+Here you use the NSG rule with the IP address of the private endpoint in the rule. With this rule, you block all inbound access to the private endpoint.
+
+![peppolicy3.png](https://github.com/chianw/chianw/blob/main/peppolicy3.png)
