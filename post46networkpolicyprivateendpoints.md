@@ -24,4 +24,6 @@ If you want to influence inbound traffic to the private endpoint, for e.g. ensur
 
 In the below example, a custom route for 10.0.0.0/24 was added to point to null. Even though 10.0.0.4/24 is less specific than the private endpoint address of 10.0.0.4/32 we are able to override it because we have enabled Network Policy for Route table at the subnet level.
 
+See this [article](https://learn.microsoft.com/en-us/azure/private-link/disable-private-endpoint-network-policy?tabs=network-policy-portal) for more information.
+
 ![peppolicy2.png](https://github.com/chianw/chianw/blob/main/peppolicy2.png)
