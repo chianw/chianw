@@ -18,3 +18,10 @@ In the below example, **10.0.0.4** is the private endpoint IP of a storage accou
 Here you use the NSG rule with the IP address of the private endpoint in the rule. With this rule, you block all inbound access to the private endpoint.
 
 ![peppolicy3.png](https://github.com/chianw/chianw/blob/main/peppolicy3.png)
+
+## Influence inbound routing to private endpoint
+If you want to influence inbound traffic to the private endpoint, for e.g. ensuring that traffic is routed to a NVA first before reaching the private endpoint, then you have to override the /32 propagated by the private endpoint with a custom route in a custom route table. By enabling Network Policy for Route Table at the subnet level, you can use a custom address prefix equal to or larger than the VNet address space to invalidate the /32 default route propagated by the private endpoint. 
+
+In the below example, a custom route for 10.0.0.0/24 was added to point to null. Even though 10.0.0.4/24 is less specific than the private endpoint address of 10.0.0.4/32 we are able to override it because we have enabled Network Policy for Route table at the subnet level.
+
+![peppolicy2.png](https://github.com/chianw/chianw/blob/main/peppolicy2.png)
