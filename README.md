@@ -35,6 +35,7 @@ I'm currently working as a cloud solutions architect in Singapore with a focus o
 29. [Comparing Internet Gateway and NAT Gateway in AWS](post45awscompareigwnatgw.md) - Sept2023
 30. [Network Policy for private endpoints in Azure](post46networkpolicyprivateendpoints.md) - Oct2023
 31. [Disable Continuous Integration in Azure DevOps Pipeline](post47disableciado.md) - Jan2024
+32. [Azure Container App in private virtual network fronted by Application Gateway](post47acaappgw.md) - Aug2025
     
 #### AWS
 1. [Installing NGINX in AWS Linux EC2 during cloud-init](post17ec2nginx.md) - April2022
