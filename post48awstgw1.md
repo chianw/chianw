@@ -26,10 +26,10 @@ In many organizations using cloud services, a common network topology is to have
 - With 1 EC2 instance connect endpoint in a subnet of a VPC, you can use it to access EC2 instances in any subnet of the VPC
 - During creation of the EC2 instance connect endpoint, you can associate it with a NSG that has 0 inbound rules and default allow all outbound rules. Then when apply NSGs to the EC2 instances, you can specify the source as the NSG of the EC2 instance connect endpoint and destination on TCP 22 to allow SSH to Linux EC2 instances
 
-For example, the EC2 instance endpoint for the 'SEA' VPC has the following details. Even though it is in 1 subnet in 1 AZ, it can provide secure access to EC2 instances in other subnets and AZ in the same VPC.
 
 <img width="1272" height="950" alt="image" src="https://github.com/user-attachments/assets/07021c33-9402-4613-9e1b-d42db586d6f1" />
 
+For example, the EC2 instance endpoint for the 'SEA' VPC has the following details. Even though it is in 1 subnet in 1 AZ, it can provide secure access to EC2 instances in other subnets and AZ in the same VPC.
 
 <img width="1904" height="657" alt="image" src="https://github.com/user-attachments/assets/cdddef96-9a46-43f0-a2cb-c96709c0105a" />
 
