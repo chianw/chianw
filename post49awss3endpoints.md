@@ -11,6 +11,8 @@ S3 Gateway endpoints are like service endpoints in Azure which allow an EC2 to u
 
 S3 Interface endpoints are like private endpoints in Azure which installs an Elastic Network Interface ENI with private IP address on the subnet, and modifies the DNS resolution for S3 to resolve to the private IP of the ENI. It also allows EC2 in private subnets without Internet access to securely connect to S3 via the private IP of the ENI.
 
+---
+
 ### Interface endpoints
 
 As a pre-requisite to use interface endpoints, the VPC must support DNS resolution
@@ -29,5 +31,33 @@ Details of the interface endpoint
 DNS resolution for S3 from an EC2 in the subnet with interface endpoint shows that private IP addresses are returned for S3
 
 <img width="763" height="403" alt="image" src="https://github.com/user-attachments/assets/6722235d-1680-41e1-b8f3-654c3b76c735" />
+
+---
+
+### Gateway endpoints
+
+Select gateway endpoint and the correct route table to modify during its creation
+
+<img width="1904" height="855" alt="image" src="https://github.com/user-attachments/assets/50f90e9a-5b33-4b19-a4bd-79901f666c4b" />
+
+Gateway endpoint details
+
+<img width="1661" height="506" alt="image" src="https://github.com/user-attachments/assets/80c5e374-5fe4-4486-ac6e-5d6b9e2239d4" />
+
+Routing table showing additional route for managed prefix-list via gateway endpoint - this is automatically added when you create the gateway endpoint
+
+<img width="1651" height="481" alt="image" src="https://github.com/user-attachments/assets/8e10d31c-c98d-4ea6-b2da-88c40771508f" />
+
+Managed prefix list information
+
+<img width="1641" height="788" alt="image" src="https://github.com/user-attachments/assets/86aa7ae1-5e1f-4d52-96d6-a8d62416ceb8" />
+
+Verify that DNS resolution for S3 bucket now returns public IP
+
+<img width="982" height="542" alt="image" src="https://github.com/user-attachments/assets/07ef717d-f8f8-41dc-ba40-17a662e6f02c" />
+
+
+
+
 
 
