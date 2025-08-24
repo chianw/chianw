@@ -14,3 +14,8 @@ In many organizations using cloud services, a common network topology is to have
 - AWS Network Firewall does not perform NAT, unlike Azure Firewall. To support NAT there is a need for a separate NAT Gateway
 - When AWS Network Firewall is created, it will be fronted by a Gateway Load Balancer by default. When configuring routes in route tables to send traffic to the Network Firewall, choose the next-hope as ***vpce-xxx*** which represents the Gateway Load Balancer. You will not be able to see the Gateway Load Balancer in the Load Balancer page
 - When you attach a VPC to a transit gateway, you must specify one subnet from each Availability Zone to be used by the transit gateway to route traffic. Specifying one subnet from an Availability Zone enables traffic to reach resources in every subnet in that Availability Zone. Any resources in Availability Zones where there is no transit gateway attachment cannot reach the transit gateway
+
+### Accessing EC2 instances without public IP in private subnets
+- To access EC2 instances in a private subnet with only private IP, you can use EC2 Instance Connect Endpoint
+- With 1 EC2 instance connect endpoint in a subnet of a VPC, you can use it to access EC2 instances in any subnet of the VPC
+- During creation of the EC2 instance connect endpoint, you can associate it with a NSG that has 0 inbound rules and default allow all outbound rules. Then when apply NSGs to the EC2 instances, you can specify the source as the NSG of the EC2 instance connect endpoint and destination on TCP 22 to allow SSH to Linux EC2 instances
