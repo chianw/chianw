@@ -7,6 +7,7 @@ In many organizations using cloud services, a common network topology is to have
 - AWS account called 'Dev'. This contains the transit gateway, as well as a spoke VPC with 2 private subnets each containing 1 EC2 instance. The transit gateway is shared to the other 2 AWS accounts via Resource Access Manager
 - AWS account called 'Sandbox'. This contains a spoke VPC with a private subnet and EC2 instance in it.
 - AWS account called 'Prod'. This contains a VPC with 2 private subnets and 1 public subnet. The public subnet contains NAT Gateway, while 1 of the private subnet contains AWS network firewall and its Gateway LB, and the other private subnet servces for transit gateway attachment
+- The AWS Network Firewall is configured with a rule to allow ALL IP traffic and is configured to send logs to CloudWatch
 - All the 3 AWS accounts are in the same organization. Resource Access Manager is configured to allow the Transit Gateway in 'Dev' account to be shared to 'Sandbox' and 'Prod' accounts.
 - All resources created in the same region of ***ap-southeast-1*** 
 
