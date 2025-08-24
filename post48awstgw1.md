@@ -2,6 +2,8 @@
 
 In many organizations using cloud services, a common network topology is to have a hub and spoke network topology, where the hub provides security services to enable inspection of spoke to spoke traffic and spoke to Internet. In Azure, this can be enabled via secured VWAN hub. In this example for AWS, I will be using Transit Gateway along with AWS Network Firewall and NAT Gateway to achieve the functionality of a secured hub.
 
+<img width="1272" height="950" alt="image" src="https://github.com/user-attachments/assets/0fc5c055-ef36-4c50-b838-abdbbe277c96" />
+
 
 ### Resources involved in this setup:
 - AWS account called 'Dev'. This contains the transit gateway, as well as a spoke VPC with 2 private subnets each containing 1 EC2 instance. The transit gateway is shared to the other 2 AWS accounts via Resource Access Manager
