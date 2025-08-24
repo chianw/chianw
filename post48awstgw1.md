@@ -69,3 +69,25 @@ The route table is associated to both subnets across 2 AZs in SEA VPC.
 
 <img width="1900" height="813" alt="image" src="https://github.com/user-attachments/assets/65ef2697-0599-4735-8f7e-75a456d08245" />
 
+### Transit GW attachments and route tables
+The TGW will have 3 attachments as shown below. The **SEA** attachment is to the SEA VPC, the **FIRE** attachment is the to Network Firewall VPC and the **SKY** attachment is to the Sandbox VPC. Note that the attachment request from Prod and Sandbox accounts to the TGW in Dev account need to be approved at the Dev account TGW before the attachment can be completed.
+ 
+<img width="1905" height="574" alt="image" src="https://github.com/user-attachments/assets/4fbb956d-765b-4f26-a649-c83e2e3d8d7a" />
+
+
+There are 2 route tables for the TGW. The **main** route table is associated with the attachments to spoke VPCs and the **firewall** route table is associated with the attachment to Network Firewall
+
+<img width="1904" height="765" alt="image" src="https://github.com/user-attachments/assets/0d5c4d6a-4118-41b5-b824-86f4c9ef47af" />
+
+The **main** route table is the **pre-inspection** table that defines routes to send to the attachment for Network firewall. It is associated to the attachments to Dev and Sandbox.
+
+<img width="2" height="1" alt="image" src="https://github.com/user-attachments/assets/716b10b9-78ee-46b7-b342-e7ff24d92bd6" />
+
+No propagations to the **main** route table
+<img width="1904" height="764" alt="image" src="https://github.com/user-attachments/assets/79bdd0ac-7d05-4b76-aaad-539ab1efb5c1" />
+
+Default route on **main** route table to the attachment going to Network Firewall
+<img width="1903" height="766" alt="image" src="https://github.com/user-attachments/assets/3c841c00-6fd2-42c5-9062-ec57ec21dd37" />
+
+
+
