@@ -79,7 +79,7 @@ There are 2 route tables for the TGW. The **main** route table is associated wit
 
 <img width="1904" height="765" alt="image" src="https://github.com/user-attachments/assets/0d5c4d6a-4118-41b5-b824-86f4c9ef47af" />
 
-The **main** route table is the **pre-inspection** table that defines routes to send to the attachment for Network firewall. It is associated to the attachments to Dev and Sandbox.
+The **main** TGW route table is the **pre-inspection** table that defines routes to send to the attachment for Network firewall. It is associated to the attachments to Dev and Sandbox.
 
 <img width="2" height="1" alt="image" src="https://github.com/user-attachments/assets/716b10b9-78ee-46b7-b342-e7ff24d92bd6" />
 
@@ -88,6 +88,18 @@ No propagations to the **main** route table
 
 Default route on **main** route table to the attachment going to Network Firewall
 <img width="1903" height="766" alt="image" src="https://github.com/user-attachments/assets/3c841c00-6fd2-42c5-9062-ec57ec21dd37" />
+
+The **firewall** TGW route table contains routes for **post-inspection** by Network Firewall, it is used to send traffic back to the spoke VPCs via their attachments.
+
+It is associated to the attachment to Network Firewall VPC
+<img width="1905" height="768" alt="image" src="https://github.com/user-attachments/assets/9648e9e9-fc47-498b-9bed-b2c1ff8675bc" />
+
+No propagation to the **firewall** TGW route table
+<img width="1901" height="768" alt="image" src="https://github.com/user-attachments/assets/222f58c3-9d6c-4697-ab4b-533563c95e7a" />
+
+Routes in the **firewall** route table to route traffic back to spoke VPCs via their attachments
+<img width="1903" height="765" alt="image" src="https://github.com/user-attachments/assets/4e94f6e0-9c75-48da-a2b0-cc02d5a16549" />
+
 
 
 
