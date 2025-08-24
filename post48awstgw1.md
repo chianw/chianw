@@ -47,12 +47,15 @@ The NSG for EC2 instances has an inbound rule specifying source as NSG of the EC
 The transit gateway in Dev account is shared to Prod and Sandbox account via Resource Access Manager configuration in Dev account. Before Resource Access Manager can be used, it has to be first enabled in the RAM console via the management account of the organization. 
 
 Enable sharing of resources in organization
+<br>
 <img width="1897" height="575" alt="image" src="https://github.com/user-attachments/assets/d470bc4b-881b-47f5-985e-1b052cdcbda8" />
 
-
+<br>
 <img width="1910" height="804" alt="image" src="https://github.com/user-attachments/assets/902394e3-a94c-4b0c-812b-3f383d44ba46" />
 
+<br>
 Sharing is via the 12 digit account numbers of Prod and Sandbox accounts
 
+<br>
 <img width="1892" height="926" alt="image" src="https://github.com/user-attachments/assets/ccd82e88-b449-4388-abb3-70ce017110ed" />
 
