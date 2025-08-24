@@ -102,6 +102,55 @@ No propagation to the **firewall** TGW route table
 Routes in the **firewall** route table to route traffic back to spoke VPCs via their attachments
 <img width="1903" height="765" alt="image" src="https://github.com/user-attachments/assets/4e94f6e0-9c75-48da-a2b0-cc02d5a16549" />
 
+### Prod account VPC routing configuration
+The TGW attachment in the Prod VPC should be in a different subnet from the one which contains Network Firewall, otherwise the setup will not work. 
+
+The route table associated with the subnet with TGW attachment in Prod VPC has a default route to the GWLB **vpce-xxx**
+
+<img width="1907" height="570" alt="image" src="https://github.com/user-attachments/assets/ba9fe619-43c8-4d3f-89f2-248a8548f6a1" />
+
+It is associated with the subnet that contains the TGW attachment.
+
+<img width="1906" height="721" alt="image" src="https://github.com/user-attachments/assets/7f8d6edc-61fa-40a9-8b04-7375e83ce6d9" />
+
+The route table associated with the subnet containing Network Firewall has a default route to the NAT GW, and routes for the spoke VPCs pointing back to the TGW attachment in the VPC
+
+<img width="1908" height="656" alt="image" src="https://github.com/user-attachments/assets/1b4633b0-c033-4d50-a44b-96198bcea9ef" />
+
+This happens to be the main route table and the Network firewall subnet is associated with it. 
+
+<img width="1904" height="776" alt="image" src="https://github.com/user-attachments/assets/78b3f85a-69d8-457a-96a4-6997981ba0cb" />
+
+The route table associated to the NATGW subnet has a default route to VPC IGW, and routes for the spoke VPCs pointing back to the GWLB **vpce-xxx** to ensure return traffic from Internet goes back to Network Firewall
+
+<img width="1906" height="654" alt="image" src="https://github.com/user-attachments/assets/7fa2680a-fefe-4d3d-9517-c1b22edf3645" />
+
+This route table is associated to the NATGW subnet.
+
+<img width="1906" height="736" alt="image" src="https://github.com/user-attachments/assets/a0532277-f962-4616-940d-b561b1140429" />
+
+### NAT GW 
+The NAT GW setup is shown below, take note of the public IP
+
+<img width="1910" height="658" alt="image" src="https://github.com/user-attachments/assets/308d28f9-e0e8-4834-b4e7-27667e2c5c4b" />
+
+### Verification tests
+
+Ping tests from Dev VPC
+<img width="1908" height="675" alt="image" src="https://github.com/user-attachments/assets/f4838fe4-439f-4932-9ca8-d43eba2e50e3" />
+
+Ping tests from Sandbox VPC
+<img width="1905" height="829" alt="image" src="https://github.com/user-attachments/assets/be918989-ddd2-4979-9678-b2c7813252e0" />
+
+Cloudwatch logs from Network firewall
+<img width="1902" height="927" alt="image" src="https://github.com/user-attachments/assets/583cd2e6-4ec1-4678-b82f-24b04106ec72" />
+
+
+
+
+
+
+
 
 
 
