@@ -81,7 +81,9 @@ There are 2 route tables for the TGW. The **main** route table is associated wit
 
 The **main** TGW route table is the **pre-inspection** table that defines routes to send to the attachment for Network firewall. It is associated to the attachments to Dev and Sandbox.
 
-<img width="2" height="1" alt="image" src="https://github.com/user-attachments/assets/716b10b9-78ee-46b7-b342-e7ff24d92bd6" />
+**main** TGW route table is associated with the attachments to spoke VPCs
+<img width="1906" height="770" alt="image" src="https://github.com/user-attachments/assets/52442872-5453-4d96-bae4-77b16323a588" />
+
 
 No propagations to the **main** route table
 <img width="1904" height="764" alt="image" src="https://github.com/user-attachments/assets/79bdd0ac-7d05-4b76-aaad-539ab1efb5c1" />
