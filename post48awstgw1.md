@@ -2,7 +2,8 @@
 
 In many organizations using cloud services, a common network topology is to have a hub and spoke network topology, where the hub provides security services to enable inspection of spoke to spoke traffic and spoke to Internet. In Azure, this can be enabled via secured VWAN hub. In this example for AWS, I will be using Transit Gateway along with AWS Network Firewall and NAT Gateway to achieve the functionality of a secured hub.
 
-<img width="1272" height="950" alt="image" src="https://github.com/user-attachments/assets/0fc5c055-ef36-4c50-b838-abdbbe277c96" />
+<img width="1272" height="950" alt="image" src="https://github.com/user-attachments/assets/e9a0e01b-c684-4945-8e42-a07b35ac53ba" />
+
 
 
 ### Resources involved in this setup:
@@ -47,15 +48,24 @@ The NSG for EC2 instances has an inbound rule specifying source as NSG of the EC
 The transit gateway in Dev account is shared to Prod and Sandbox account via Resource Access Manager configuration in Dev account. Before Resource Access Manager can be used, it has to be first enabled in the RAM console via the management account of the organization. 
 
 Enable sharing of resources in organization
-<br>
+
 <img width="1897" height="575" alt="image" src="https://github.com/user-attachments/assets/d470bc4b-881b-47f5-985e-1b052cdcbda8" />
 
-<br>
+
 <img width="1910" height="804" alt="image" src="https://github.com/user-attachments/assets/902394e3-a94c-4b0c-812b-3f383d44ba46" />
 
-<br>
+
 Sharing is via the 12 digit account numbers of Prod and Sandbox accounts
 
-<br>
+
 <img width="1892" height="926" alt="image" src="https://github.com/user-attachments/assets/ccd82e88-b449-4388-abb3-70ce017110ed" />
+
+### Route table at spoke VPCs
+The route table associated to the subnets at spoke VPCs will need a default route to the TGW attachment. As an example, the route table for SEA VPC is shown below:
+
+<img width="1905" height="562" alt="image" src="https://github.com/user-attachments/assets/828f8a38-f848-4e7d-ae08-31960e2e60af" />
+
+The route table is associated to both subnets across 2 AZs in SEA VPC.
+
+<img width="1900" height="813" alt="image" src="https://github.com/user-attachments/assets/65ef2697-0599-4735-8f7e-75a456d08245" />
 
