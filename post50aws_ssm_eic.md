@@ -1,6 +1,6 @@
 ## This post compares the differences in using AWS Session Manager and EC2 instance connect endpoint to connect to EC2 instances with only private IP in private subnets
 
-| Feature | <div style="width:250px">**SSM Session Manager**</div> | <div style="width:250px">**EC2 Instance Connect (EIC) Endpoint**</div> |
+| Feature | **SSM Session Manager** | **EC2 Instance Connect (EIC) Endpoint** |
 | :--- | :--- | :--- |
 | **Network Placement** | Private subnet (Private IP only) | Private subnet (Private IP only) |
 | **Outbound Internet Access** | **Required** (via NAT Gateway or VPC Endpoints) to reach SSM service | **Not Required** (works entirely within the AWS backbone) |
